@@ -25,7 +25,7 @@ export default function ClientTestimonials() {
   return (
     <>
       {/* Client Logos */}
-      <section className="py-16 bg-blue-600">
+      {/* <section className="py-16 bg-blue-600">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">Our Clients</h2>
@@ -43,29 +43,17 @@ export default function ClientTestimonials() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index}>
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <div key={i} className="w-4 h-4 bg-yellow-400 rounded-full mr-1" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-4">"{testimonial.text}"</p>
-                  <div>
-                    <p className="font-semibold text-gray-800">{testimonial.name}</p>
-                    <p className="text-sm text-gray-500">{testimonial.company}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+      <section className="py-16 flex flex-col md:flex-row items-center justify-center md:max-w-[1140px] md:mx-auto gap-10 ">
+        <div className="w-[90%] md:w-[50%]">
+            <p className="md:text-2xl font-bold text-[#01008c] mb-6 text-xl">Subscribe to newsletter</p>
+            <p className="md:w-[500px] text-sm md:text-base text-zinc-500">Subscribe Us for new upcoming promo deals and products informations</p>
+        </div >
+        <div className="flex gap-2 md:w-[40%] flex-col md:flex-row w-[90%]">
+            <input type="email" name="" id="" className=" w-full border rounded px-6 py-4"  placeholder="Enter Your Email"/>
+            <button className="px-6 py-4 bg-blue-800 text-white font-semibold">Subscribe</button>
         </div>
       </section>
     </>

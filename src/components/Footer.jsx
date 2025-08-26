@@ -1,53 +1,85 @@
-export default function Footer() {
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaArrowRight, FaLocationDot, FaPhone} from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
+import { LuMail} from "react-icons/lu";
+import { FaYoutube } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+
+
+export default function Footer() 
+{
+  
   return (
-    <footer className="bg-gray-900 text-white py-16">
-      <div className="container mx-auto px-4">
+    <footer className="bg-gray-900 text-white pt-16 pb-4 flex flex-col flex-wrap" style={{ backgroundImage: "url('https://waterengineering.ae/wp-content/uploads/2024/09/Footer-image-scaled.jpg')" }}>
+      <section className="container mx-auto md:px-10 flex flex-col md:flex-row justify-between md:items-center mb-10 border-b border-gray-700 px-4 pb-10 max-w-[1140px]">
+          <div className="w-40 h-40 mb-4 md:w-25 md:h-25 bg-white py-1 rounded-lg">
+               <img className="h-full w-full " src="https://waterengineering.ae/wp-content/uploads/2024/09/image.png" alt="" />
+          </div>
+          <div className="flex gap-3 "> 
+            <a href="" className=" font-black bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white text-blue-900 transition-all duration-300 "><FaFacebookF size={25}/></a>
+            <a href="" className="bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white text-blue-900 transition-all duration-300"><RiTwitterXFill size={25}/></a>
+            <a href="" className="bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white text-blue-900 transition-all duration-300"><IoLogoWhatsapp size={25}/></a>
+            <a href="" className="bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white text-blue-900 transition-all duration-300"><FaYoutube size={25}/></a>
+            <a href="" className="bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white text-blue-900 transition-all duration-300"><FaInstagram size={25}/></a>
+          </div>
+          <div className="flex flex-col items-start justify-start">
+            <p className="text-lg  text-green-500">GIVE US A CALL</p>
+            <p className="text-3xl font-black ">+92300000</p>
+          </div>
+
+      </section>
+
+      <div className="container mx-auto px-4 max-w-[1140px]">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">W</span>
-              </div>
-              <span className="text-xl font-bold">Water Engineering</span>
+              <span className="text-xl font-bold">About</span>
             </div>
-            <p className="text-gray-400 mb-4">
-              Leading water treatment solutions provider in the UAE with over 20 years of experience.
-            </p>
-            <p className="text-gray-400">📞 +971 4 123 4567</p>
+            
+            <p className="text-white">Serving industries worldwide with premium water treatment solutions for over decades. As a trusted leader with 5,000+ satisfied customers, Water Engineering delivers pure excellence in every drop.</p>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>Water Treatment</li>
-              <li>System Installation</li>
-              <li>Maintenance</li>
-              <li>Consultation</li>
+            <h3 className="text-xl font-semibold mb-4">Contact</h3>
+            <ul className="space-y-2 text-white text-lg">
+              <div className = "flex items-center gap-4">
+                <div><FaLocationDot /></div>
+                <div><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, exercitationem?</a>
+                </div></div>
+              <div className = "flex items-center gap-4">
+                  <div><LuMail /></div>
+                  <div>example@example.com</div>
+              </div>
+              <div className = "flex items-center gap-4">
+                  <div><FaPhone /></div>
+                  <div>+92 3000000000</div>
+              </div>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>About Us</li>
-              <li>Products</li>
-              <li>Projects</li>
-              <li>Contact</li>
+            <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-white flex flex-col">
+              <a href="" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />About Us</a>
+              <a href="" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Products</a>
+              <a href="" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Projects</a>
+              <a href="" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Contact</a>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-blue-600 rounded-full" />
-              <div className="w-8 h-8 bg-blue-600 rounded-full" />
-              <div className="w-8 h-8 bg-blue-600 rounded-full" />
-              <div className="w-8 h-8 bg-blue-600 rounded-full" />
+            <h3 className="text-xl font-semibold mb-4">Explore</h3>
+            <div className="flex flex-col text-white space-y-2">
+              <a href="">Industries</a>
+              <a href="">Parts</a>
+              <a href="">Technologies</a>
+              <a href="">Locations</a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-100 mt-12 pt-8 text-center text-white text-xl">
           <p>&copy; 2024 Water Engineering. All rights reserved.</p>
         </div>
       </div>

@@ -1,16 +1,24 @@
-import { Card, CardContent } from "./ui/Card"
+// import { Card, CardContent } from "./ui/Card"
+// import React from "react";
+import Carousel from "./ui/Carousel";
 
 export default function QualityProducts() {
   const products = ["Water Filters", "RO Systems", "UV Sterilizers", "Water Softeners"]
-
+  const images = 
+  {
+    "image1" : "https://waterengineering.ae/wp-content/uploads/2025/01/Turbochargers-01-2-1024x703.jpg",
+    "image2" : "https://waterengineering.ae/wp-content/uploads/2025/01/Turbochargers-01-2-1024x703.jpg",
+    "image3" : "https://waterengineering.ae/wp-content/uploads/2025/01/Turbochargers-01-2-1024x703.jpg",
+    "image4" : "https://waterengineering.ae/wp-content/uploads/2025/01/Turbochargers-01-2-1024x703.jpg"
+  }
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="pt-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Quality Products For Every Need</h2>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          </div>
+          {/* 
+         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map((product, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6 text-center">
@@ -23,23 +31,33 @@ export default function QualityProducts() {
               </CardContent>
             </Card>
           ))}
-        </div>
+          </div> */}
 
-        <div className="mt-12 bg-white rounded-lg p-8">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                Ensuring Healthy Drinkable Water With Our Quality & Reliability
+          <div className="p-6">
+          <Carousel />   {/* use carousel here */}
+        </div>
+    </div>
+    <section className="bg-white w-full relative p-50 mt-20">
+          <div className="absolute mt-12 bg-white -top-25 left-1/2 transform -translate-x-1/2 shadow-[_0px_4px_12px_rgba(0,0,0,0.15)] rounded-lg p-6 max-w-[1140px] mx-auto">
+          <div className="flex gap-5 ">
+            <div className="w-[1000px] h-[300px]">
+              <img src="https://waterengineering.ae/wp-content/uploads/2024/12/Promoting-healthy-community-1-1024x585.jpg" alt="Quality control" className="rounded-lg shadow-lg w-full h-full" />
+            </div>
+            <div className="max-w-[60%] py-7">
+              <h3 className="text-2xl font-bold text-[#01008c] mb-6">
+                Promoting healthy community with our high quality & cost effective water engineering !
               </h3>
               <p className="text-gray-600">
-                Our commitment to excellence ensures that every drop of water meets the highest standards of purity and
-                safety. With advanced technology and rigorous testing, we deliver reliable water treatment solutions.
+                Our Speciality is to design cost effective Water Filtration System that will meet Client’s requirement. Our Company aim is to build a sustainable and effective Water Purification System based on the end-user needs and within their budget. The sources of various parts came from different countries ( USA, Japan, Germany, UK, Turkey, Taiwan ) with a High Standard Quality and Certifications are assemble locally and by our Seasoned Professional Technician and Engineers.
               </p>
             </div>
-            <img src="/placeholder-ekmfv.png" alt="Quality control" className="rounded-lg shadow-lg" />
           </div>
         </div>
-      </div>
+      </section>
     </section>
+    
+
+    
+
   )
 }
