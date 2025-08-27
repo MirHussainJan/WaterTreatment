@@ -1,27 +1,54 @@
 export default function ProjectJourney() {
   const steps = [
-    { step: "01", title: "Consultation", desc: "Initial assessment and requirements analysis" },
-    { step: "02", title: "Design", desc: "Custom solution design and engineering" },
-    { step: "03", title: "Installation", desc: "Professional installation and commissioning" },
-    { step: "04", title: "Maintenance", desc: "Ongoing support and maintenance services" },
+    {
+      title: "Design",
+      desc: "We create custom designs that fit your needs perfectly, making sure everything works just right.",
+      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Untitled-5-01.svg",
+    },
+    {
+      title: "Fabrication",
+      desc: "Our team carefully puts everything together to bring your design to life with care and attention.",
+      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Untitled-5-02.svg",
+    },
+    {
+      title: "Onsite Installation",
+      desc: "We install the system at your site, making sure it’s set up and ready to run smoothly.",
+      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Untitled-5-03.svg",
+    },
+    {
+      title: "Servicing",
+      desc: "We provide ongoing service and maintenance to keep your system running efficiently for the long term.",
+      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Untitled-5-04.svg",
+    },
   ]
 
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Your Project Journey</h2>
-          <p className="text-gray-600">From consultation to completion, we guide you every step</p>
+    <section className="py-16 bg-white">
+      <div className="container mx-auto max-w-[1140px]">
+        {/* Heading */}
+        <div className="text-center mb-6">
+          <p className="text-gray-600 font-semibold text-base md:text-xl uppercase mb-4">
+            From Planning to Pure Water
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#01008c] mb-6">Your Project Journey</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {steps.map((item, index) => (
-            <div key={index} className="text-center">
-              <div className="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                {item.step}
+        {/* Steps */}
+        <div className="relative flex flex-col md:flex-row justify-between items-center w-full">
+          {/* Single horizontal line behind all bubbles */}
+          <div className="hidden md:block absolute top-12 h-[2px] bg-gray-300 z-0 w-[70%] left-1/2 -translate-x-1/2"></div>
+          {steps.map((step, index) => (
+            <div key={index} className="flex flex-col items-center text-center max-w-xs px-6 relative z-10">
+              {/* Circle with Icon */}
+              <div className="w-25 h-25 bg-white rounded-full shadow-md flex items-center justify-center mb-6">
+                <img src={step.icon} alt={step.title} className="object-cover" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h3>
-              <p className="text-gray-600 text-sm">{item.desc}</p>
+
+              {/* Title */}
+              <h3 className="text-xl font-bold text-[#01008c] mb-4">{step.title}</h3>
+
+              {/* Description */}
+              <p className="text-gray-600">{step.desc}</p>
             </div>
           ))}
         </div>

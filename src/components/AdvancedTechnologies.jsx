@@ -15,19 +15,19 @@ export default function AdvancedTechnologies() {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-48">
+      <div className="container mx-auto max-w-[1140px]">
         <div className="text-center mb-8">
-          <p className="text-gray-600 font-semibold text-xl uppercase mb-4">SMART WATER SOLUTIONS</p>
-          <h2 className="text-4xl font-bold text-[#01008c] mb-6">Advanced Treatment Technologies</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
+          <p className="text-gray-600 font-semibold text-base  md:text-xl uppercase mb-4">SMART WATER SOLUTIONS</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#01008c] mb-6">Advanced Treatment Technologies</h2>
+          <p className="text-gray-600 max-w-3xl mx-auto px-3 md:px-0">
             Using the latest <strong>technology</strong> and our deep experience, we ensure pure, clean water every time. From simple filtration to complete treatment systems, we combine modern solutions with proven expertise to solve any water challenge you face.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {technologies.map((tech, index) => (
-            <Card key={index} className="shadow-xl overflow-hidden group">
-              <CardContent className="text-center">
+            <Card key={index} className="shadow-xl w-[90%] md:w-full mx-auto overflow-hidden group">
+              <CardContent className="text-center w-full">
                 <img
                   src={tech.image || "/placeholder.svg"}
                   alt={tech.name}

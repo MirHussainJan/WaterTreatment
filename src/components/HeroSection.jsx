@@ -9,7 +9,7 @@ const slides = [
     description:
       "From expert consultation to ongoing maintenance, we deliver end-to-end water treatment excellence. Our comprehensive services include design, fabrication, installation, and dedicated maintenance support. Trust our state-of-the-art technology and expert team to provide sustainable solutions that ensure pure water while protecting our environment.",
     button: "Call Us",
-    image: "/placeholder-0n1ur.png",
+    image: "https://waterengineering.ae/wp-content/uploads/2024/12/Home-Page-Banners-02-scaled.jpg",
   },
   {
     id: 2,
@@ -17,8 +17,16 @@ const slides = [
     description:
       "At WATER ENGINEERING, we revolutionize water treatment with cost-effective solutions. Based in Dubai Investment Park 2, UAE, we lead the MENA region in advanced water treatment. As an ISO 9001-2015 certified company and proud member of the World Water Quality Association, we deliver solutions and quality standards.",
     button: "Get In Touch",
-    image: "/placeholder-4hidv.png",
+    image: "https://waterengineering.ae/wp-content/uploads/2024/12/Home-Page-Banners-03-scaled.jpg",
+  },{
+    id: 3,
+    title: "Setting New Standards",
+    description:
+      "From expert consultation to ongoing maintenance, we deliver end-to-end water treatment excellence. Our comprehensive services include design, fabrication, installation, and dedicated maintenance support. Trust our state-of-the-art technology and expert team to provide sustainable solutions that ensure pure water while protecting our environment.",
+    button: "Call Us",
+    image: "https://waterengineering.ae/wp-content/uploads/2024/12/Home-Page-Banners-01-scaled.jpg",
   },
+  
 ]
 
 export default function HeroCarousel() {
@@ -36,11 +44,11 @@ export default function HeroCarousel() {
   const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative mt-32 h-[60vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 mt-30 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000 ${
             index === current ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -48,14 +56,19 @@ export default function HeroCarousel() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${slide.image})` }}
           />
-          <div className="absolute inset-0 bg-blue-900/70" />
+          <div className="absolute inset-0 bg-zinc-900/50" />
           <div className="relative container mx-auto px-4 h-full flex items-center justify-center text-center">
             <div className="max-w-7xl text-white">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">{slide.title}</h1>
               <p className="text-lg mb-6 text-blue-100">{slide.description}</p>
-              <button className="bg-blue-600 cursor-pointer hover:bg-blue-700 text-white px-8 py-3 rounded-md font-semibold">
-                {slide.button}
-              </button>
+<button
+  className="cursor-pointer hover:brightness-90 text-white px-8 py-3 rounded-md font-semibold"
+  style={{
+    backgroundImage: "linear-gradient(180deg, #3b82f6 10%, #074188 100%)",
+  }}
+>
+  {slide.button}
+</button>
             </div>
           </div>
         </div>
@@ -81,8 +94,8 @@ export default function HeroCarousel() {
           <button
             key={index}
             onClick={() => setCurrent(index)}
-            className={`w-3 h-3 rounded-full ${
-              index === current ? "bg-white" : "bg-gray-400"
+            className={`w-2 h-2 rounded-full ${
+              index === current ? "bg-blue-900" : "bg-white"
             }`}
           />
         ))}
