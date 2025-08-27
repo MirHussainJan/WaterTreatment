@@ -36,11 +36,11 @@ export default function HeroCarousel() {
   const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
 
   return (
-    <section className="relative h-screen overflow-hidden">
+    <section className="relative h-[60vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute inset-0 mt-30 transition-opacity duration-1000 ${
+          className={`absolute inset-0 transition-opacity duration-1000 ${
             index === current ? "opacity-100" : "opacity-0"
           }`}
         >

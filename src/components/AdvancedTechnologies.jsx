@@ -15,7 +15,7 @@ export default function AdvancedTechnologies() {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-48">
+      <div className="container mx-auto max-w-[1140px]">
         <div className="text-center mb-8">
           <p className="text-gray-600 font-semibold text-xl uppercase mb-4">SMART WATER SOLUTIONS</p>
           <h2 className="text-4xl font-bold text-[#01008c] mb-6">Advanced Treatment Technologies</h2>

@@ -10,7 +10,7 @@ export default function LeadingSolutions() {
             <h2 className="text-4xl font-bold text-[#01008c] mb-6">
               Leading UAE's Water Innovation
             </h2>
-            <p className="text-gray-600 font-medium text-lg mb-4">
+            <p className="text-gray-600 text-lg mb-4">
               In 1999, Water Engineering set out on a transformative journey
               with a vision to revolutionize water treatment solutions.
             </p>
