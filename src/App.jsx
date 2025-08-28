@@ -22,7 +22,6 @@ const App = () => {
       <AdvancedTechnologies />
       <Certifications />
       <ProjectJourney />
-      <IndustriesServed />
       <VideoSection />
       <QualityProducts />
       <BlogSection />

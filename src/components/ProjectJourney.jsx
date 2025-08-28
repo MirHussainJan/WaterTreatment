@@ -27,14 +27,14 @@ export default function ProjectJourney() {
       <div className="container mx-auto max-w-[1140px]">
         {/* Heading */}
         <div className="text-center mb-6">
-          <p className="text-gray-600 font-semibold text-xl uppercase mb-4">
+          <p className="text-gray-600 font-semibold text-base md:text-xl uppercase mb-4">
             From Planning to Pure Water
           </p>
-          <h2 className="text-4xl font-bold text-[#01008c] mb-6">Your Project Journey</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#01008c] mb-6">Your Project Journey</h2>
         </div>
 
         {/* Steps */}
-        <div className="relative flex flex-col md:flex-row justify-between w-full">
+        <div className="relative flex flex-col md:flex-row justify-between items-center w-full">
           {/* Single horizontal line behind all bubbles */}
           <div className="hidden md:block absolute top-12 h-[2px] bg-gray-300 z-0 w-[70%] left-1/2 -translate-x-1/2"></div>
           {steps.map((step, index) => (

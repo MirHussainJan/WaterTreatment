@@ -1,38 +1,69 @@
+import { ArrowUpRight } from "lucide-react"
+
 export default function BlogSection() {
-  const blogs = ["Advanced Water Treatment", "Sustainable Solutions", "Industry Innovations"]
+  const blogs = [
+    {
+      title: "Top 10 Benefits of Using Water Softeners for Your Home",
+      desc: "Learn how water softeners transform your home by eliminating hard ....",
+      img: "https://waterengineering.ae/wp-content/uploads/2025/01/image_converted-1.png",
+    },
+    {
+      title: "Issues with Water Filtration Systems and How to Fix Them",
+      desc: "Find out the common problems with water filtration systems, like ....",
+      img: "https://waterengineering.ae/wp-content/uploads/2024/12/water_system.png",
+    },
+    {
+      title: "Whole Home Water Filtration System: Pure Water Everywhere",
+      desc: "Upgrade to a whole home water filtration system for filtered ....",
+      img: "https://waterengineering.ae/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-13-at-1.02.12-PM.jpeg ",
+    },
+  ]
 
   return (
-    <section className="py-16">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-[#ECF2F6] flex-wrap">
+      <div className="max-w-[1140px] mx-auto ">
+        {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Water Engineering Blogs</h2>
+          <p className="text-gray-600 font-semibold tracking-wide uppercase">
+            Expert Insights & Updates
+          </p>
+          <h2 className="text-2xl md:text-4xl font-bold text-[#01008c] mb-6">
+            Water Engineering Blogs
+          </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Blog Cards */}
+        <div className="flex justify-content-center gap-12 flex-col md:flex-row">
           {blogs.map((blog, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow border border-gray-200"
+              className="relative mx-auto w-[80%]"
             >
-              <div className="p-0">
-                <img
-                  src={`/abstract-geometric-shapes.png?height=200&width=300&query=${blog.toLowerCase()} water engineering blog`}
-                  alt={blog}
-                  className="w-full h-48 object-cover rounded-t-lg"
-                />
-                <div className="p-6">
-                  <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full mb-2">
-                    Technology
-                  </span>
-                  <h3 className="text-lg font-semibold text-gray-800 mb-2">{blog}</h3>
-                  <p className="text-gray-600 text-sm mb-4">
-                    Latest insights and developments in water treatment technology
-                  </p>
-                  <button className="px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors text-sm">
-                    Read More
-                  </button>
-                </div>
+              <div className={`w-full h-[220px] bg-center bg-cover rounded-2xl relative`} style={{ backgroundImage: `url(${blog.img})` }}>
+                {/* Blog Image */}
+                {/* <img
+                src={blog.img}
+                alt={blog.title}
+                className=""
+              /> */}
+
+                <div className="absolute w-20 h-20 -bottom-6 -right-2"><img src="https://waterengineering.ae/wp-content/uploads/2024/09/Group-6.svg" alt="" /></div>
+
               </div>
+
+              {/* Blog Content */}
+              <div className="pt-6">
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  {blog.title}
+                </h3>
+                <hr className="border-gray-200" />
+                <p className="text-gray-500 text-sm pt-4">{blog.desc}</p>
+              </div>
+
+              {/* Arrow Button */}
+              {/* <button className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-[#F3F7FA] flex items-center justify-center hover:bg-gray-200 transition">
+                <ArrowUpRight className="w-5 h-5 text-gray-700" />
+              </button> */}
             </div>
           ))}
         </div>
