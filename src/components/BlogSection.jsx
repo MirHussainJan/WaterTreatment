@@ -33,7 +33,7 @@ export default function BlogSection() {
         </div>
 
         {/* Blog Cards */}
-        <div className="flex justify-content-center gap-12 flex-col md:flex-row">
+        <div className="flex justify-content-center gap-12 flex-col lg:flex-row">
           {blogs.map((blog, index) => (
             <div
               key={index}

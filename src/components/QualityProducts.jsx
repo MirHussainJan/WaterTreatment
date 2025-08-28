@@ -15,25 +15,13 @@ export default function QualityProducts() {
     <section className=" ">
       <div className="bg-gray-50 mx-auto px-4 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Quality Products For Every Need</h2>
+          
+          <p className="text-gray-600 font-semibold tracking-wide uppercase">
+            Solutions Gallery
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#01008c] mb-6">Quality Products For Every Need</h2>
         </div>
-        {/* 
-         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((product, index) => (
-            <Card key={index} className="hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 text-center">
-                <img
-                  src={`/abstract-geometric-shapes.png?height=150&width=200&query=${product.toLowerCase()} water treatment equipment`}
-                  alt={product}
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-lg font-semibold text-gray-800">{product}</h3>
-              </CardContent>
-            </Card>
-          ))}
-          </div> */}
-
-        <div className="p-6">
+        <div className="">
           <Carousel />   {/* use carousel here */}
         </div>
       </div>
