@@ -1,4 +1,5 @@
 import { Card, CardContent } from "./ui/Card"
+import Carousel from "./ui/Carousel2"
 
 export default function ClientTestimonials() {
   const testimonials = [
@@ -25,24 +26,15 @@ export default function ClientTestimonials() {
   return (
     <>
       {/* Client Logos */}
-      <section className="py-16 bg-blue-600">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">Our Clients</h2>
+      <section className="w-ful  bg-[url(https://waterengineering.ae/wp-content/uploads/2024/09/bg_3.jpg)] bg-cover bg-center">
+        <main className="w-full h-full bg-blue-900/82 py-15">
+          <div className=" mx-auto px-4">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-white mb-4">Our Clients</h2>
+              <Carousel/>
+            </div>
           </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
-            {[1, 2, 3, 4, 5].map((client, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg text-center">
-                <img
-                  src={`/generic-company-logo.png?height=80&width=120&query=company logo ${client}`}
-                  alt={`Client ${client}`}
-                  className="h-12 mx-auto mb-2"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
+        </main>
       </section>
 
       {/* Testimonials */}
