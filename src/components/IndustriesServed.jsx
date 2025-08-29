@@ -39,8 +39,8 @@ export default function IndustriesServed() {
                     <img src={industry.img}/>
                 </div>
                 <div className="w-[80%]">
-                  <h3 className="text-xl font-semibold text-gray-800 ">{industry.title}</h3>
-                  <p className="text-gray-600 text-base">{industry.desc}</p>
+                  <h3 className="text-xl font-bold text-[#01008c] mb-4">{industry.title}</h3>
+                  <p className="text-gray-600">{industry.desc}</p>
                 </div>
               </CardContent>
             </Card>

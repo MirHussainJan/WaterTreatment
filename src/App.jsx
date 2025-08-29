@@ -12,11 +12,13 @@ import BlogSection from "./components/BlogSection";
 import BenefitsSection from "./components/BenefitsSection";
 import ClientTestimonials from "./components/ClientTestimonials";
 import Footer from "./components/Footer";
+import Action from "./components/ui/Action";
 
 const App = () => {
   return (
     <div className="min-h-screen bg-white relative">
       <Header />
+
       <HeroSection />
       <LeadingSolutions />
       <AdvancedTechnologies />
@@ -29,6 +31,7 @@ const App = () => {
       <BenefitsSection />
       <ClientTestimonials />
       <Footer />
+            <Action />
     </div>
   );
 };
