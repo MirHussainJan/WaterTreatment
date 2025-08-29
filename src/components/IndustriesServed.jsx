@@ -23,9 +23,9 @@ export default function IndustriesServed() {
         
         </div>
 
-        <section className="w-[1140px] bg-trnasparent p-2 mx-auto flex gap-10">
+        <section className="w-[1140px] bg-trnasparent p-2 mx-auto flex flex-col md:flex-row gap-10">
         <div className="w-[50%]">
-              <div className="w-full  h-120 sticky top-30">
+              <div className="w-full  h-120 md:sticky top-30">
                 <img src="https://waterengineering.ae/wp-content/uploads/2024/12/Industries-We-Serve-Image-scaled.jpg" className="w-full h-full " alt="" />
               </div>
         </div>
