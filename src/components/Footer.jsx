@@ -13,8 +13,8 @@ export default function Footer()
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-4 flex flex-col flex-wrap" style={{ backgroundImage: "url('https://waterengineering.ae/wp-content/uploads/2024/09/Footer-image-scaled.jpg')" }}>
       <section className="container mx-auto md:px-10 flex flex-col md:flex-row justify-between md:items-center mb-10 border-b border-gray-700 px-4 pb-10 max-w-[1140px]">
-          <div className="w-40 h-40 mb-4 md:w-25 md:h-25 bg-white py-1 rounded-lg">
-               <img className="h-full w-full " src="https://waterengineering.ae/wp-content/uploads/2024/09/image.png" alt="" />
+          <div className="w-40 h-40 mb-4 md:w-45 md:h-20 bg-white py-1 rounded-lg flex items-center px-2">
+               <img className=" w-full " src="/Logo.png" alt="" />
           </div>
           <div className="flex gap-3 "> 
             <a href="" className=" font-black bg-white w-12 h-12 rounded-full flex items-center justify-center hover:bg-blue-900 hover:text-white text-blue-900 transition-all duration-300 "><FaFacebookF size={25}/></a>

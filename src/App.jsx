@@ -10,10 +10,10 @@ import VideoSection from "./components/VideoSection";
 import QualityProducts from "./components/QualityProducts";
 import BlogSection from "./components/BlogSection";
 import BenefitsSection from "./components/BenefitsSection";
-import ClientTestimonials from "./components/ClientTestimonials";
 import Footer from "./components/Footer";
 import Action from "./components/ui/Action";
-
+import Clients from "./components/ClientTestimonials";
+import ClientTestimonials from "./components/Reviews";
 const App = () => {
   return (
     <div className="min-h-screen bg-white relative">
@@ -29,6 +29,7 @@ const App = () => {
       <QualityProducts />
       <BlogSection />
       <BenefitsSection />
+      <Clients/>
       <ClientTestimonials />
       <Footer />
             <Action />

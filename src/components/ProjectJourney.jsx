@@ -30,7 +30,7 @@ export default function ProjectJourney() {
           <p className="text-gray-600 font-semibold text-base md:text-xl uppercase mb-4">
             From Planning to Pure Water
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#01008c] mb-6">Your Project Journey</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-[#01008c] mb-8 titles">Your Project Journey</h2>
         </div>
 
         {/* Steps */}
@@ -40,12 +40,12 @@ export default function ProjectJourney() {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center text-center max-w-xs px-6 relative z-10">
               {/* Circle with Icon */}
-              <div className="w-25 h-25 bg-white rounded-full shadow-md flex items-center justify-center mb-6">
+              <div className="w-25 h-25 bg-white rounded-full shadow-[0_0_15px_0_rgba(0,0,0,0.14)] flex items-center justify-center mb-6">
                 <img src={step.icon} alt={step.title} className="object-cover" />
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-[#01008c] mb-4">{step.title}</h3>
+              <h3 className="text-xl md:text-2xl font-bold text-[#01008c] mb-4 titles">{step.title}</h3>
 
               {/* Description */}
               <p className="text-gray-600">{step.desc}</p>

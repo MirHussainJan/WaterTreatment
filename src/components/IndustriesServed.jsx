@@ -1,4 +1,5 @@
 import { Card, CardContent } from "./ui/Card"
+import img from "../assets/img2.png"
 
 export default function IndustriesServed() {
   const industries = [
@@ -11,35 +12,35 @@ export default function IndustriesServed() {
 
   return (
     <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto md:px-4">
         <div className="text-center mb-12">
           <p className="text-gray-600 font-semibold tracking-wide uppercase">
             Powering Every Sector
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#01008c] mb-2">Industries We Serve</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-[#01008c] mb-2 titles">Industries We Serve</h2>
           <p className="text-gray-600  tracking-wide  max-w-[40%] mx-auto">
             Water quality challenges vary by industry, and so do our solutions. Discover how our water treatment expertise transforms businesses across <a href="" className="font-bold text-pink-700">industries</a>. Every sector has unique water quality demands – explore below to see how we’re meeting them head-on.
           </p>
         
         </div>
 
-        <section className="w-[1140px] bg-trnasparent p-2 mx-auto flex flex-col md:flex-row gap-10">
-        <div className="w-[50%]">
-              <div className="w-full  h-120 md:sticky top-30">
-                <img src="https://waterengineering.ae/wp-content/uploads/2024/12/Industries-We-Serve-Image-scaled.jpg" className="w-full h-full " alt="" />
+        <section className="md:max-w-[1140px] bg-trnasparent p-2 mx-auto flex flex-col md:flex-row md:gap-10">
+        <div className="w-full md:w-[52%]">
+              <div className="w-full h-90  md:h-120 md:sticky top-30">
+                <img src={img} className="w-full h-full " alt="" />
               </div>
         </div>
-        <div className="w-[50%] ">
-            <div className="flex flex-col gap-8">
+        <div className="md:w-[50%] ">
+            <div className="flex  flex-col md:gap-8">
           {industries.map((industry, index) => (
             <Card key={index} className="">
-              <CardContent className="p-6 flex gap-10">
-                <div className="w-[25%] bg-transparent flex items-center justify-center ">
+              <CardContent className=" md:p-6 flex flex-col gap-7 md:gap-10">
+                <div className="w-[35%] md:w-[25%] bg-transparent flex items-center justify-center mt-2">
                   
                     <img src={industry.img}/>
                 </div>
-                <div className="w-[80%]">
-                  <h3 className="text-xl font-bold text-[#01008c] mb-4">{industry.title}</h3>
+                <div className="w-full md:w-[80%]">
+                  <h3 className="text-xl md:text-3xl font-bold text-[#01008c] mb-2 titles ">{industry.title}</h3>
                   <p className="text-gray-600">{industry.desc}</p>
                 </div>
               </CardContent>

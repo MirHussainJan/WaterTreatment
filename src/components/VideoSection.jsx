@@ -4,8 +4,8 @@ export default function VideoSection() {
     <section className="py-16 bg-[url(https://waterengineering.ae/wp-content/uploads/2024/09/vw_shape_bg_1.png)] bg-cover  mx-auto">
       <div className="container mx-auto px-4 max-w-[1140px]">
         <div className="text-center mb-12">
-          <p className="text-gray-600 font-semibold tracking-wide uppercase">Visual Journey</p>
-          <h2 className="text-2xl md:text-4xl font-bold text-[#01008c] mb-6 w-[40%] mx-auto">See Our Solutions In Action</h2>
+          <p className="text-gray-600 font-semibold tracking-wide uppercase titl">Visual Journey</p>
+          <h2 className="text-2xl md:text-5xl font-bold text-[#01008c] mb-6 w-[40%] mx-auto titles">See Our Solutions In Action</h2>
         </div>
 
         <div className="flex items-center max-w-3xl bg-[url(https://waterengineering.ae/wp-content/uploads/2024/09/Water-Desalination-Plants-UAE.jpg)] rounded-4xl mx-auto bg-cover">

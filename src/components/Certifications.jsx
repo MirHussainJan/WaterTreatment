@@ -13,8 +13,8 @@ export default function Certifications() {
       <div className="container mx-auto">
         {/* Title */}
         <div className="text-center mb-4">
-          <h2 className="text-4xl font-bold text-[#01008c] mb-6">Certifications</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#01008c] mb-6 titles ">Certifications</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto mb-4 font-normal">
             Each certification stands as a testament to our dedication to excellence,
             guaranteeing the highest standards in both service and safety.
           </p>
@@ -25,7 +25,7 @@ export default function Certifications() {
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="w-[170px] h-[170px] bg-white rounded-lg shadow-top-lg shadow-lg flex items-center justify-center p-6 object-cover relative"
+              className="w-[170px] h-[170px] bg-white rounded-lg shadow-[0_0_15px_0_rgba(0,0,0,0.14)]  flex items-center justify-center p-6 object-cover relative"
             >
               <img className="absolute w-7 h-7 -top-2 left-3" src="https://waterengineering.ae/wp-content/uploads/2024/09/shield-trust.png" alt="" />
               <img

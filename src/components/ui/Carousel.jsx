@@ -85,7 +85,7 @@ export default function Carousel() {
             {extendedSlides.map((src, index) => (
               <div
                 key={index}
-                className="w-1/5 flex-shrink-0 px-[10.5px] transition-all duration-300 hover:scale-105"
+                className="w-1/5 flex-shrink-0 px-[8px] transition-all duration-300 hover:scale-105"
               >
                 <div className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
                   <img

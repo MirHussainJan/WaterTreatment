@@ -19,20 +19,20 @@ export default function QualityProducts() {
           <p className="text-gray-600 font-semibold tracking-wide uppercase">
             Solutions Gallery
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#01008c] mb-6">Quality Products For Every Need</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-[#01008c] mb-6 titles ">Quality Products For Every Need</h2>
         </div>
         <div className="">
           <Carousel />   {/* use carousel here */}
         </div>
       </div>
-      <section className="w-full  relative md:px-50 mb-20 -mt-20">
+      <section className="w-full  relative md:px-50 mb-20 -mt-23">
         <div className="mx-auto mt-10 bg-white shadow-[_0px_4px_12px_rgba(0,0,0,0.15)] rounded-lg md:p-6 p-3 max-w-[1140px]">
           <div className="flex md:gap-5 flex-col md:flex-row md:items-center md:justify-center">
             <div className="md:w-[1000px] md:h-[300px]">
               <img src="https://waterengineering.ae/wp-content/uploads/2024/12/Promoting-healthy-community-1-1024x585.jpg" alt="Quality control" className="rounded-lg shadow-lg w-full h-full" />
             </div>
             <div className="md:max-w-[60%] py-7">
-              <h3 className="md:text-2xl font-bold text-[#01008c] mb-6 w-full text-sm">
+              <h3 className="md:text-3xl font-bold text-[#01008c] mb-6 w-full text-sm titles ">
                 Promoting healthy community with our high quality & cost effective water engineering !
               </h3>
               <p className="text-gray-600 text-sm w-full">

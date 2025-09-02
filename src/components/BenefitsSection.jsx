@@ -30,7 +30,7 @@ export default function ProjectJourney() {
         {/* Heading */}
         <div className="text-center mb-6">
           
-          <h2 className="text-2xl md:text-4xl font-bold text-[#01008c] mb-6">What In it for you</h2>
+          <h2 className="text-2xl md:text-5xl font-bold text-[#01008c] mb-6 titles">What In it for you</h2>
         </div>
  
         {/* Steps */}
@@ -44,7 +44,7 @@ export default function ProjectJourney() {
               </div>
  
               {/* Title */}
-              <h3 className="text-xl font-bold text-[#01008c] mb-4">{step.title}</h3>
+              <h3 className="text-xl md:text-3xl font-bold text-[#01008c] mb-4 titles">{step.title}</h3>
  
               {/* Description */}
               <p className="text-gray-600">{step.desc}</p>

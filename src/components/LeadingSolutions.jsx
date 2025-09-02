@@ -1,3 +1,4 @@
+import img from '../assets/Imgs/Main.png'
 export default function LeadingSolutions() {
   return (
     <section className="py-16 max-w-[1140px] mx-auto bg-white">
@@ -7,7 +8,7 @@ export default function LeadingSolutions() {
             <p className="text-gray-600 font-semibold text-xl uppercase mb-4">
               ENGINEERING PURE EXCELLENCE
             </p>
-            <h2 className="text-4xl font-bold text-[#01008c] mb-6">
+            <h2 className="text-5xl font-bold text-[#01008c] mb-6 titles">
               Leading UAE's Water Innovation
             </h2>
             <p className="text-gray-600 font-medium text-lg mb-4">
@@ -16,9 +17,9 @@ export default function LeadingSolutions() {
             </p>
             <p className="text-gray-500 font-light">
               Today, we proudly serve clients across{" "}
-              <strong className="font-semibold">18 countries</strong> on three continents, with over{" "}
-              <strong className="font-semibold">5,000 satisfied customers</strong> and{" "}
-              <strong className="font-semibold">350+ successful installations</strong>. worldwide, particularly across the UAE, U.S, U.K standing at the forefront of comprehensive water treatment solutions.
+              <strong className="font-bold">18 countries</strong> on three continents, with over{" "}
+              <strong className="font-bold">5,000 satisfied customers</strong> and{" "}
+              <strong className="font-bold">350+ successful installations</strong>. worldwide, particularly across the UAE, U.S, U.K standing at the forefront of comprehensive water treatment solutions.
             </p>
             <p className="text-gray-500 font-light mb-6">
               Our commitment drives us to deliver cost-effective, custom-engineered systems that meet the specific needs of every client – from military institutions to healthcare facilities. With expertise sourced from global industry leaders, Water Engineering continues to set new standards in water treatment technology while pursuing our core mission: delivering pure water solutions for generations to come.
@@ -30,7 +31,7 @@ export default function LeadingSolutions() {
 
           <div className="flex justify-end">
             <img
-              src="https://waterengineering.ae/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-13-at-10.01.39-PM-1024x940.jpeg"
+              src={img}
               alt="Water treatment system"
               className="rounded-lg self-end"
             />

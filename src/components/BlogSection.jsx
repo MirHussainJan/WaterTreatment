@@ -27,7 +27,7 @@ export default function BlogSection() {
           <p className="text-gray-600 font-semibold tracking-wide uppercase">
             Expert Insights & Updates
           </p>
-          <h2 className="text-2xl md:text-4xl font-bold text-[#01008c] mb-6">
+          <h2 className="text-2xl md:text-5xl font-bold text-[#01008c] mb-6 titles">
             Water Engineering Blogs
           </h2>
         </div>
@@ -53,7 +53,7 @@ export default function BlogSection() {
 
               {/* Blog Content */}
               <div className="pt-6">
-                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                <h3 className="text-lg font-semibold cursor-pointer text-gray-500 mb-2 hover:text-gray-800">
                   {blog.title}
                 </h3>
                 <hr className="border-gray-200" />
