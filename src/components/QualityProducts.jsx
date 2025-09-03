@@ -1,6 +1,7 @@
 // import { Card, CardContent } from "./ui/Card"
 // import React from "react";
 import Carousel from "./ui/Carousel";
+import img from "../assets/QualityProducts.png"
 
 export default function QualityProducts() {
   const products = ["Water Filters", "RO Systems", "UV Sterilizers", "Water Softeners"]
@@ -29,7 +30,7 @@ export default function QualityProducts() {
         <div className="mx-auto mt-10 bg-white shadow-[_0px_4px_12px_rgba(0,0,0,0.15)] rounded-lg md:p-6 p-3 max-w-[1140px]">
           <div className="flex md:gap-5 flex-col md:flex-row md:items-center md:justify-center">
             <div className="md:w-[1000px] md:h-[300px]">
-              <img src="https://waterengineering.ae/wp-content/uploads/2024/12/Promoting-healthy-community-1-1024x585.jpg" alt="Quality control" className="rounded-lg shadow-lg w-full h-full" />
+              <img src={img} alt="Quality control" className="rounded-lg shadow-lg w-full h-full" />
             </div>
             <div className="md:max-w-[60%] py-7">
               <h3 className="md:text-3xl font-bold text-[#01008c] mb-6 w-full text-sm titles ">

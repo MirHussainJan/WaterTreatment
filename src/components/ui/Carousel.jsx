@@ -1,13 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import img1 from "../../assets/CarouselImagas/img1.png";
+import img2 from "../../assets/CarouselImagas/img2.png";
+import img3 from "../../assets/CarouselImagas/img3.png";
+import img4 from "../../assets/CarouselImagas/img4.png";
+import img5 from "../../assets/CarouselImagas/img5.png";
+import img6 from "../../assets/CarouselImagas/img6.png";
 
 const images = {
-  image1: "https://waterengineering.ae/wp-content/uploads/2025/01/Turbochargers-01-2-1024x703.jpg",
-  image2: "https://waterengineering.ae/wp-content/uploads/2024/12/Water-Makers-1024x683.jpg",
-  image3: "https://waterengineering.ae/wp-content/uploads/2024/12/Water-Chiller-1-1024x683.jpg",
-  image4: "https://waterengineering.ae/wp-content/uploads/2024/12/Swimming-Pool-Chlorination-System-1024x683.jpg",
-  image5: "https://waterengineering.ae/wp-content/uploads/2024/12/Stainless-Steel-RO-Water-Dispenser-1024x683.jpg",
-  image6: "https://waterengineering.ae/wp-content/uploads/2024/12/Stainless-Steel-Bag-Filter-1024x683.jpg",
+  image1: img1,
+  image2: img2,
+  image3: img3,
+  image4: img4,
+  image5: img5,
+  image6: img6,
 };
 
 export default function Carousel() {
@@ -85,17 +91,14 @@ export default function Carousel() {
             {extendedSlides.map((src, index) => (
               <div
                 key={index}
-                className="w-1/5 flex-shrink-0 px-[8px] transition-all duration-300 hover:scale-105"
+                className="w-1/5 flex-shrink-0 px-[8px] transition-all duration-300 hover:scale-101"
               >
-                <div className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200">
+                <div className="bg-white rounded-xl shadow-sm overflow-hidden border border-gray-200 p-4">
                   <img
                     src={src}
                     alt={`Slide ${index % total + 1}`}
                     className="w-full h-40 object-cover"
                   />
-                  <div className="p-3 text-center">
-                    <p className="text-sm font-medium text-gray-700">Card {(index % total) + 1}</p>
-                  </div>
                 </div>
               </div>
             ))}
