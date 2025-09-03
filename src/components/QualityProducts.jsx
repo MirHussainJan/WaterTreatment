@@ -20,7 +20,7 @@ export default function QualityProducts() {
           <p className="text-gray-600 font-semibold tracking-wide uppercase">
             Solutions Gallery
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-[#01008c] mb-6 titles ">Quality Products For Every Need</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#01008c] mb-6 titles ">Quality Products For Every Need</h2>
         </div>
         <div className="">
           <Carousel />   {/* use carousel here */}
@@ -33,10 +33,10 @@ export default function QualityProducts() {
               <img src={img} alt="Quality control" className="rounded-lg shadow-lg w-full h-full" />
             </div>
             <div className="md:max-w-[60%] py-7">
-              <h3 className="md:text-3xl font-bold text-[#01008c] mb-6 w-full text-sm titles ">
+              <h3 className="text-2xl md:text-3xl font-bold text-[#01008c] mb-6 w-full  titles ">
                 Promoting healthy community with our high quality & cost effective water engineering !
               </h3>
-              <p className="text-gray-600 text-sm w-full">
+              <p className="text-justify text-gray-600 text-sm md:text-base w-full">
                 Our Speciality is to design cost effective Water Filtration System that will meet Client’s requirement. Our Company aim is to build a sustainable and effective Water Purification System based on the end-user needs and within their budget. The sources of various parts came from different countries ( USA, Japan, Germany, UK, Turkey, Taiwan ) with a High Standard Quality and Certifications are assemble locally and by our Seasoned Professional Technician and Engineers.
               </p>
             </div>

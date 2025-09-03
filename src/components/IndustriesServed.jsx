@@ -17,8 +17,8 @@ export default function IndustriesServed() {
           <p className="text-gray-600 font-semibold tracking-wide uppercase">
             Powering Every Sector
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-[#01008c] mb-2 titles">Industries We Serve</h2>
-          <p className="text-gray-600  tracking-wide  max-w-[40%] mx-auto">
+          <h2 className="text-xl md:text-5xl font-bold text-[#01008c] mb-2 titles">Industries We Serve</h2>
+          <p className="text-gray-600  tracking-wide max-w-[90%] md:max-w-[60%] mx-auto">
             Water quality challenges vary by industry, and so do our solutions. Discover how our water treatment expertise transforms businesses across <a href="" className="font-bold text-pink-700">industries</a>. Every sector has unique water quality demands – explore below to see how we’re meeting them head-on.
           </p>
         
@@ -34,14 +34,14 @@ export default function IndustriesServed() {
             <div className="flex  flex-col md:gap-8">
           {industries.map((industry, index) => (
             <Card key={index} className="">
-              <CardContent className=" md:p-6 flex flex-col gap-7 md:gap-10">
+              <CardContent className=" md:p-6 flex flex-col md:flex-row gap-7 md:gap-10">
                 <div className="w-[35%] md:w-[25%] bg-transparent flex items-center justify-center mt-2">
                   
                     <img src={industry.img}/>
                 </div>
                 <div className="w-full md:w-[80%]">
                   <h3 className="text-xl md:text-3xl font-bold text-[#01008c] mb-2 titles ">{industry.title}</h3>
-                  <p className="text-gray-600">{industry.desc}</p>
+                  <p className="text-gray-600 text-justify">{industry.desc}</p>
                 </div>
               </CardContent>
             </Card>

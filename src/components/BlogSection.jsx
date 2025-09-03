@@ -27,7 +27,7 @@ export default function BlogSection() {
           <p className="text-gray-600 font-semibold tracking-wide uppercase">
             Expert Insights & Updates
           </p>
-          <h2 className="text-2xl md:text-5xl font-bold text-[#01008c] mb-6 titles">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#01008c] mb-6 titles">
             Water Engineering Blogs
           </h2>
         </div>

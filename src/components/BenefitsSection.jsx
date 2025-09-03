@@ -30,14 +30,14 @@ export default function ProjectJourney() {
         {/* Heading */}
         <div className="text-center mb-6">
           
-          <h2 className="text-2xl md:text-5xl font-bold text-[#01008c] mb-6 titles">What In it for you</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#01008c] mb-6 titles">What In it for you</h2>
         </div>
  
         {/* Steps */}
-        <div className="relative flex flex-col md:flex-row justify-between w-full">
+        <div className="relative flex flex-col md:flex-row justify-between gap-4 w-full">
           {/* Single horizontal line behind all bubbles */}
           {steps.map((step, index) => (
-            <div key={index} className="flex flex-col items-center text-center max-w-xs px-6 relative z-10 mx-auto">
+            <div key={index} className="flex flex-col items-center text-center max-w-xs relative z-10 mx-auto">
               {/* Circle with Icon */}
               <div className="w-30 h-30  flex items-center justify-center mb-6">
                 <img src={step.icon} alt={step.title} className="object-cover" />
@@ -47,7 +47,7 @@ export default function ProjectJourney() {
               <h3 className="text-xl md:text-3xl font-bold text-[#01008c] mb-4 titles">{step.title}</h3>
  
               {/* Description */}
-              <p className="text-gray-600">{step.desc}</p>
+              <p className="text-gray-600 w-full">{step.desc}</p>
             </div>
           ))}
         </div>

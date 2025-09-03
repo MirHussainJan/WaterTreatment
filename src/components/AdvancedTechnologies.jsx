@@ -21,7 +21,7 @@ export default function AdvancedTechnologies() {
       <div className="container mx-auto max-w-[1140px]">
         <div className="text-center mb-8">
           <p className="text-gray-600 font-semibold text-base  md:text-xl uppercase mb-2">SMART WATER SOLUTIONS</p>
-          <h2 className="text-5xl md:text-5xl font-bold text-[#01008c] mb-3 titles leading-9.5">Advanced Treatment Technologies</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#01008c] mb-3 titles leading-9.5">Advanced Treatment Technologies</h2>
           <p className="text-gray-600 max-w-3xl mx-auto px-3 md:px-0">
             Using the latest <span className="text-pink-700 font-semibold">technology</span> and our deep experience, we ensure pure, clean water every time. From simple filtration to complete treatment systems, we combine modern solutions with proven expertise to solve any water challenge you face.
           </p>
