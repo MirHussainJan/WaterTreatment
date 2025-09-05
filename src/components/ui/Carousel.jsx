@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import img1 from "../../assets/CarouselImagas/img1.png";
 import img2 from "../../assets/CarouselImagas/img2.png";
 import img3 from "../../assets/CarouselImagas/img3.png";
-import img4 from "../../assets/CarouselImagas/img4.png";
+import img4 from "../../assets/CarouselImagas/Img4.png";
 import img5 from "../../assets/CarouselImagas/img5.png";
 import img6 from "../../assets/CarouselImagas/img6.png";
 
