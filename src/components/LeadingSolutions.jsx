@@ -17,7 +17,7 @@ export default function LeadingSolutions() {
             </p>
             <p className="text-gray-500 font-light text-justify">
               Today, we proudly serve clients across{" "}
-              <strong className="font-bold">18 countries</strong> on three continents, with over{" "}
+              <strong className="font-bold">35+ countries</strong> on three continents, with over{" "}
               <strong className="font-bold">5,000 satisfied customers</strong> and{" "}
               <strong className="font-bold">350+ successful installations</strong>. worldwide, particularly across the Middle East and North Africa standing at the forefront of comprehensive water treatment solutions.
             </p>
