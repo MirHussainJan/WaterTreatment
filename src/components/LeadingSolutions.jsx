@@ -19,7 +19,7 @@ export default function LeadingSolutions() {
               Today, we proudly serve clients across{" "}
               <strong className="font-bold">18 countries</strong> on three continents, with over{" "}
               <strong className="font-bold">5,000 satisfied customers</strong> and{" "}
-              <strong className="font-bold">350+ successful installations</strong>. worldwide, particularly across the UAE, U.S, U.K standing at the forefront of comprehensive water treatment solutions.
+              <strong className="font-bold">350+ successful installations</strong>. worldwide, particularly across the Middle East and North Africa standing at the forefront of comprehensive water treatment solutions.
             </p>
             <p className="text-gray-500 font-light mb-6 text-justify">
               Our commitment drives us to deliver cost-effective, custom-engineered systems that meet the specific needs of every client – from military institutions to healthcare facilities. With expertise sourced from global industry leaders, Water Engineering continues to set new standards in water treatment technology while pursuing our core mission: delivering pure water solutions for generations to come.
