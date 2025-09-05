@@ -48,8 +48,8 @@ export default function Header() {
         </div>
       </div>
       <header className="bg-white sticky top-0 z-100 w-full shadow-md">
-        <div className="flex max-w-[1140px] items-end md:items-center justify-between mx-auto py-4 px-4 lg:px-0">
-          <div className="flex items-end lg:items-center justify-between py-4">
+        <div className=" max-w-[1140px] flex justify-between items-center mx-auto py-4 px-4 lg:px-0">
+          <div className="flex items-center justify-between py-4">
             <img src="/Logo.png" alt="Water Engineering Logo" className="w-38" />
           </div>
           <nav className="hidden items-center lg:flex lg:gap-12">
