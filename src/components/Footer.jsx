@@ -37,7 +37,7 @@ export default function Footer()
               <span className="text-xl font-bold">About</span>
             </div>
             
-            <p className="text-white">Serving industries worldwide with premium water treatment solutions for over decades. As a trusted leader with 5,000+ satisfied customers, Water Engineering delivers pure excellence in every drop.</p>
+            <p className="text-white">Serving industries worldwide with premium water treatment solutions for over decades. As a trusted leader with 5,000+ satisfied customers, Innovators delivers pure excellence in every drop.</p>
           </div>
 
           <div>
@@ -80,7 +80,7 @@ export default function Footer()
         </div>
 
         <div className="border-t border-gray-100 mt-12 pt-8 text-center text-white text-xl">
-          <p>&copy; 2024 Water Engineering. All rights reserved.</p>
+          <p>&copy; 2024 Innovators. All rights reserved.</p>
         </div>
       </div>
     </footer>

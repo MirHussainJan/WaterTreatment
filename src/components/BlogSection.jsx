@@ -5,7 +5,7 @@ export default function BlogSection() {
     {
       title: "Top 10 Benefits of Using Water Softeners for Your Home",
       desc: "Learn how water softeners transform your home by eliminating hard ....",
-      img: "https://waterengineering.ae/wp-content/uploads/2025/01/image_converted-1.png",
+      img: "https://iili.io/KCsCgEb.png",
     },
     {
       title: "Issues with Water Filtration Systems and How to Fix Them",
@@ -28,7 +28,7 @@ export default function BlogSection() {
             Expert Insights & Updates
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-[#01008c] mb-6 titles">
-            Water Engineering Blogs
+            Innovators Blogs
           </h2>
         </div>
 

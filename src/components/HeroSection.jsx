@@ -46,7 +46,7 @@ export default function HeroCarousel() {
   const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length)
 
   return (
-    <section className="relative h-[50vh] overflow-hidden">
+    <section className="relative h-[60vh] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.id}

@@ -12,7 +12,7 @@ export default function LeadingSolutions() {
               Leading UAE's Water Innovation
             </h2>
             <p className="text-gray-600 font-medium text-lg mb-4 text-justify">
-              In 1999, Water Engineering set out on a transformative journey
+              In 1999, Innovators set out on a transformative journey
               with a vision to revolutionize water treatment solutions.
             </p>
             <p className="text-gray-500 font-light text-justify">
