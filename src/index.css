@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@import "@fontsource/poppins";
+@import "@fontsource/darker-grotesque/800.css";
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.titles {
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: 800;
+}
