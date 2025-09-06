@@ -10,12 +10,12 @@ export default function BlogSection() {
     {
       title: "Issues with Water Filtration Systems and How to Fix Them",
       desc: "Find out the common problems with water filtration systems, like ....",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/water_system.png",
+      img: "https://iili.io/KCbWKfS.png",
     },
     {
       title: "Whole Home Water Filtration System: Pure Water Everywhere",
       desc: "Upgrade to a whole home water filtration system for filtered ....",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-13-at-1.02.12-PM.jpeg ",
+      img: "https://iili.io/KCDyqIn.png",
     },
   ]
 
@@ -59,11 +59,6 @@ export default function BlogSection() {
                 <hr className="border-gray-200" />
                 <p className="text-gray-500 text-sm pt-4">{blog.desc}</p>
               </div>
-
-              {/* Arrow Button */}
-              {/* <button className="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-[#F3F7FA] flex items-center justify-center hover:bg-gray-200 transition">
-                <ArrowUpRight className="w-5 h-5 text-gray-700" />
-              </button> */}
             </div>
           ))}
         </div>

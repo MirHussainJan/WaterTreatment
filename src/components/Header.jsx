@@ -10,18 +10,19 @@ import {
 import { CgMenuRight } from "react-icons/cg";
 import { IoIosMail } from "react-icons/io";
 import Menu from "./ui/Menu";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [active, setActive] = useState("Home");
   const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About Us", href: "#" },
-    { name: "Technologies", href: "#" },
-    { name: "Industries", href: "#" },
-    { name: "Blogs", href: "#" },
-    { name: "Parts", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Home", href: "/" },
+    { name: "About Us", href: "/about" },
+    { name: "Technologies", href: "/technologies" },
+    { name: "Industries", href: "/industries" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "Parts", href: "/parts" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -54,9 +55,9 @@ export default function Header() {
           </div>
           <nav className="hidden items-center lg:flex lg:gap-12">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 onClick={() => {
                   setActive(link.name);
                   setMenuOpen(false);
@@ -68,7 +69,7 @@ export default function Header() {
                 style={active === link.name ? { color: "#01008c" } : {}}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </nav>
           <button

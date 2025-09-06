@@ -1,39 +1,25 @@
-import React from "react";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import LeadingSolutions from "./components/LeadingSolutions";
-import AdvancedTechnologies from "./components/AdvancedTechnologies";
-import Certifications from "./components/Certifications";
-import ProjectJourney from "./components/ProjectJourney";
-import IndustriesServed from "./components/IndustriesServed";
-import VideoSection from "./components/VideoSection";
-import QualityProducts from "./components/QualityProducts";
-import BlogSection from "./components/BlogSection";
-import BenefitsSection from "./components/BenefitsSection";
-import Footer from "./components/Footer";
-import Action from "./components/ui/Action";
-import Clients from "./components/ClientTestimonials";
-import ClientTestimonials from "./components/Reviews";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Technologies from "./pages/Technologies";
+import About from "./pages/About";
+import Industries from "./pages/Industries";
+import Blogs from "./pages/BLogs";
+import Parts from "./pages/Parts";
+import ContactUs from "./pages/ContactUs";
+
 const App = () => {
   return (
-    <div className="min-h-screen bg-white relative">
-      <Header />
-
-      <HeroSection />
-      <LeadingSolutions />
-      <AdvancedTechnologies />
-      <Certifications />
-      <ProjectJourney />
-      <IndustriesServed />
-      <VideoSection />
-      <QualityProducts />
-      <BlogSection />
-      <BenefitsSection />
-      <Clients/>
-      <ClientTestimonials />
-      <Footer />
-            <Action />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/about' element={<About />}></Route>
+        <Route path='/technologies' element={<Technologies />}></Route>
+        <Route path='/Industries' element={<Industries />}></Route>
+        <Route path='/Blogs' element={<Blogs />}></Route>
+        <Route path='/Parts' element={<Parts />}></Route>
+        <Route path='/Contact' element={<ContactUs />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
