@@ -146,7 +146,7 @@ const Parts = () => {
               <img
                 src={product.img}
                 alt={product.name}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                className="w-full h-[180px] object-cover rounded-lg shadow-lg"
               />
               <h2 className="text-base text-center font-semibold text-gray-600">
                 {product.name}
@@ -166,7 +166,7 @@ const Parts = () => {
               <img
                 src={product.img}
                 alt={product.name}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                className="w-full h-[180px] object-cover rounded-lg shadow-lg"
               />
               <h2 className="text-base text-center font-semibold text-gray-600">
                 {product.name}
@@ -186,7 +186,7 @@ const Parts = () => {
               <img
                 src={product.img}
                 alt={product.name}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                className="w-full h-[180px] object-cover rounded-lg shadow-lg"
               />
               <h2 className="text-base text-center font-semibold text-gray-600">
                 {product.name}
