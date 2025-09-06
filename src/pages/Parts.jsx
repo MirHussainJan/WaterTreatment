@@ -6,77 +6,77 @@ const Parts = () => {
   const commercialProducts = [
     {
       name: "Alkaline Ionizer Water Machine",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/ALKALINE-IONIZER-WATER-MACHINE-1024x683.jpg",
+      img: "/Water-Ionization.png",
     },
     {
       name: "Copper Silver Ionization",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Copper-Silver-Ionization-1024x683.jpg",
+      img: "/INNOVATORS (17).png",
     },
     {
       name: "Portable RO System",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Portable-RO-System-1024x683.jpg",
+      img: "/INNOVATORS (32).png",
     },
     {
       name: "Self Cleaning Filter",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Self-Cleaning-Filter-1-1024x683.jpg",
+      img: "/INNOVATORS (30).png",
     },
     {
       name: "Stainless Steel Bag Filter",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Stainless-Steel-Bag-Filter-1024x683.jpg",
+      img: "/img6.png",
     },
     {
       name: "Stainless Steel RO Water Dispenser",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Stainless-Steel-RO-Water-Dispenser-1024x683.jpg",
+      img: "/img5.png",
     },
     {
       name: "Swimming Pool Chlorination System",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Swimming-Pool-Chlorination-System-1024x683.jpg",
+      img: "/Img4.png",
     },
     {
       name: "Water Chiller",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Water-Chiller-1-1024x683.jpg",
+      img: "/INNOVATORS (20).png",
     },
     {
       name: "Water Makers",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Water-Makers-1024x683.jpg",
+      img: "img2.png",
     },
   ];
   const domesticProducts = [
     {
       name: "Water Softener",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Water-Softener-1024x683.jpg",
+      img: "/INNOVATORS (28).png",
     },
     {
       name: "Water Filter System",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Water-Filter-Sysytem-1024x683.jpg",
+      img: "/INNOVATORS (29).png",
     },
     {
       name: "Water Chiller",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Water-Chiller-1024x683.jpg",
+      img: "/INNOVATORS (20).png",
     },
     {
       name: "Ultraviolet UV System",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Ultraviolet-UV-System-1024x683.jpg",
+      img: "/INNOVATORS (13).png",
     },
     {
       name: "UltraFiltration UF System",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/UltraFiltration-UF-System-1024x683.jpg",
+      img: "/INNOVATORS (27).png",
     },
     {
       name: "Shower Filter",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Shower-Filter-1024x683.jpg",
+      img: "/INNOVATORS (14).png",
     },
     {
       name: "Lab Aquarium Deionizer",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Lab-Aquarium-Deionizer-1024x683.jpg",
+      img: "/INNOVATORS (16).png",
     },
     {
       name: "Filter Cartridges",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Filter-Cartridges-1024x683.jpg",
+      img: "/INNOVATORS (25).png",
     },
     {
       name: "Alkaline Filter",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Alkaline-Filter-1024x683.jpg",
+      img: "/INNOVATORS (12).png",
     },
   ];
   const IndustrialProducts = [
@@ -86,7 +86,7 @@ const Parts = () => {
     },
     {
       name: "Industrial RO Membrane",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Industrial-RO-Membrane-1024x683.jpg",
+      img: "/INNOVATORS (22).png",
     },
     {
       name: "Industrial Water Softener",
@@ -94,7 +94,7 @@ const Parts = () => {
     },
     {
       name: "Multimedia Filter",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Multimedia-Filter-1024x683.jpg",
+      img: "/INNOVATORS (31).png",
     },
     {
       name: "Sea Water RO Plant",
@@ -106,15 +106,15 @@ const Parts = () => {
     },
     {
       name: "Self Cleaning Filter",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Self-Cleaning-Filter-1024x683.jpg",
+      img: "/INNOVATORS (30).png",
     },
     {
       name: "Brackish Water RO Plant",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Brackish-Water-RO-Plant-1024x683.jpg",
+      img: "/Reverse-osmosis.png",
     },
     {
       name: "Ultraviolet UV Sterilizers",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Ultraviolet-UV-Sterilizers-1024x683.jpg",
+      img: "/INNOVATORS (26).png",
     },
     {
       name: "Containerized RO Plant",
@@ -146,7 +146,7 @@ const Parts = () => {
               <img
                 src={product.img}
                 alt={product.name}
-                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
               <h2 className="text-base text-center font-semibold text-gray-600">
                 {product.name}
@@ -166,7 +166,7 @@ const Parts = () => {
               <img
                 src={product.img}
                 alt={product.name}
-                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
               <h2 className="text-base text-center font-semibold text-gray-600">
                 {product.name}
@@ -186,7 +186,7 @@ const Parts = () => {
               <img
                 src={product.img}
                 alt={product.name}
-                className="w-full h-auto object-cover rounded-lg shadow-lg"
+                className="w-full h-full object-cover rounded-lg shadow-lg"
               />
               <h2 className="text-base text-center font-semibold text-gray-600">
                 {product.name}

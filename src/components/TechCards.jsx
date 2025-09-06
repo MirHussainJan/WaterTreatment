@@ -18,21 +18,21 @@ const TechCards = () => {
     { name: "Water Ionization", image: img6 },
     {
       name: "Sterilization Water Treatment Systems",
-      image: img1,
+      image: "/INNOVATORS (26).png",
     },
-    { name: "Ultravoilet Disinfection", image: img2 },
-    { name: "Ion Exchange", image: img3 },
-    { name: "Activated Carbon Filtration", image: img4 },
-    { name: "Sedimentation", image: img5 },
-    { name: "Copper Silver Ionization", image: img6 },
+    { name: "Ultravoilet Disinfection", image: "/INNOVATORS (13).png" },
+    { name: "Ion Exchange", image: "/INNOVATORS (24).png" },
+    { name: "Activated Carbon Filtration", image: "/INNOVATORS (15).png" },
+    { name: "Sedimentation", image: "/INNOVATORS (23).png" },
+    { name: "Copper Silver Ionization", image: "/INNOVATORS (17).png" },
     {
       name: "Membrane Cleaning Systems",
-      image: img1,
+      image: "/INNOVATORS (22).png",
     },
-    { name: "Media Filters", image: img2 },
-    { name: "Water Chillers", image: img3 },
-    { name: "Self Cleaning Filtration", image: img4 },
-    { name: "Cartridge Filter Housings", image: img5 },
+    { name: "Media Filters", image: "/INNOVATORS (19).png" },
+    { name: "Water Chillers", image: "/INNOVATORS (20).png" },
+    { name: "Self Cleaning Filtration", image: "/INNOVATORS (21).png" },
+    { name: "Cartridge Filter Housings", image: "/INNOVATORS (20).png" },
   ];
   return (
     <div className="grid md:grid-cols-3 gap-8 mb-12 max-w-[1140px] mx-auto py-16">
@@ -45,7 +45,7 @@ const TechCards = () => {
             <img
               src={tech.image || "/placeholder.svg"}
               alt={tech.name}
-              className="w-full object-cover rounded-lg scale-[1]"
+              className="w-full object-cover scale-[1]"
             />
             <h3 className="text-base font-bold text-[#01008c] py-6 transition-colors duration-300 group-hover:bg-[#01008c] group-hover:text-white rounded-b-2xl">
               {tech.name}

@@ -10,14 +10,14 @@ import {
 import { CgMenuRight } from "react-icons/cg";
 import { IoIosMail } from "react-icons/io";
 import Menu from "./ui/Menu";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
-  const [active, setActive] = useState("Home");
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation(); // 👈 gets current route pathname
+
   const navLinks = [
     { name: "Home", href: "/" },
-    // { name: "About Us", href: "/about" },
     { name: "Technologies", href: "/technologies" },
     { name: "Industries", href: "/industries" },
     { name: "Blogs", href: "/blogs" },
@@ -54,23 +54,23 @@ export default function Header() {
             <img src="/Logo.png" alt="Water Engineering Logo" className="w-38" />
           </div>
           <nav className="hidden items-center lg:flex lg:gap-12">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                onClick={() => {
-                  setActive(link.name);
-                  setMenuOpen(false);
-                }}
-                className={`transition-colors font-semibold p-2 md:text-sm ${active === link.name
-                    ? "text-[#01008c]"
-                    : "text-gray-600 hover:text-[#01008c]"
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.href;
+              return (
+                <Link
+                  key={link.name}
+                  to={link.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`transition-colors font-semibold p-2 md:text-sm ${
+                    isActive
+                      ? "text-[#01008c]"
+                      : "text-gray-600 hover:text-[#01008c]"
                   }`}
-                style={active === link.name ? { color: "#01008c" } : {}}
-              >
-                {link.name}
-              </Link>
-            ))}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </nav>
           <button
             className="bg-zinc-300 py-1 px-3 rounded font-bold cursor-pointer flex lg:hidden"
@@ -80,13 +80,13 @@ export default function Header() {
           </button>
         </div>
         <div
-          className={`lg:hidden transition-all duration-300 ${menuOpen ? "max-h-screen overflow-y-auto" : "max-h-0 overflow-hidden"
-            }`}
+          className={`lg:hidden transition-all duration-300 ${
+            menuOpen ? "max-h-screen overflow-y-auto" : "max-h-0 overflow-hidden"
+          }`}
         >
           <Menu />
         </div>
       </header>
     </>
-
   );
 }

@@ -30,7 +30,7 @@ export default function Footer()
 
       </section>
 
-      <div className="container mx-auto px-4 max-w-[1140px]">
+      <div className="container mx-auto max-w-[1140px]">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-6">
@@ -45,36 +45,36 @@ export default function Footer()
             <ul className="space-y-2 text-white text-lg">
               <div className = "flex items-center gap-4">
                 <div><FaLocationDot /></div>
-                <div><a href="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, exercitationem?</a>
+                <div><a href="">Office and Showroom Warehouse # S11 Near Arabian Adventures DIP 2 DUBAI UAE</a>
                 </div></div>
               <div className = "flex items-center gap-4">
                   <div><LuMail /></div>
-                  <div>example@example.com</div>
+                  <div>marketing@ultratecuae.com</div>
               </div>
               <div className = "flex items-center gap-4">
                   <div><FaPhone /></div>
-                  <div>+92 3000000000</div>
+                  <div>+971 4 269 524</div>
               </div>
             </ul>
           </div>
 
-          <div>
+          <div className="ps-12">
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-white flex flex-col">
-              <a href="" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />About Us</a>
-              <a href="" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Products</a>
-              <a href="" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Projects</a>
-              <a href="" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Contact</a>
+              <a href="#" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />About Us</a>
+              <a href="/contact" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Contact</a>
+              <a href="/blogs" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Blogs</a>
+              <a href="/technologies" className=" w-25 flex gap-2 items-center hover:translate-x-2 transition-transform hover:text-gray-400 duration-200"><FaArrowRight />Produts</a>
             </ul>
           </div>
 
           <div>
             <h3 className="text-xl font-semibold mb-4">Explore</h3>
             <div className="flex flex-col text-white space-y-2">
-              <a href="">Industries</a>
-              <a href="">Parts</a>
-              <a href="">Technologies</a>
-              <a href="">Locations</a>
+              <a href="/industries">Industries</a>
+              <a href="/parts">Parts</a>
+              <a href="/technologies">Technologies</a>
+              <a href="/contact">Locations</a>
             </div>
           </div>
         </div>
