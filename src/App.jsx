@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Technologies from "./pages/Technologies";
 import About from "./pages/About";
 import Industries from "./pages/Industries";
-import Blogs from "./pages/BLogs";
+import Blogs from "./pages/Blogs";
 import Parts from "./pages/Parts";
 import ContactUs from "./pages/ContactUs";
 
