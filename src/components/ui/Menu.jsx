@@ -10,7 +10,7 @@ export default function Menu() {
             {/* <div className="px-12 border-b border-dashed border-zinc-300 py-2"><a href="/about">About Us</a></div> */}
             <div className="px-12 border-b border-dashed border-zinc-300 py-2">
                 <button type="button" className="flex justify-between items-center gap-2 cursor-pointer" onClick={() => setActive1(!active1)}>
-                    <p href="">Technologies</p><FaAngleDown />
+                    <p href={null}>Technologies</p><FaAngleDown />
                 </button>
                 
             </div>
@@ -30,7 +30,7 @@ export default function Menu() {
                 </div>
             <div className="px-12 border-b border-dashed border-zinc-300 py-2">
                 <button className="flex justify-between items-center gap-2 cursor-pointer" onClick={() => setActive2(!active2)} type="button">
-                    <p href="">Industries</p><FaAngleDown />
+                    <p href={null}>Industries</p><FaAngleDown />
                 </button>
             </div>
             <div className={`flex flex-col gap-2 text-sm transition-all duration-300 ${active2 ? 'max-h-160 overflow-y-auto' : 'max-h-0 overflow-hidden'}`}
@@ -47,8 +47,8 @@ export default function Menu() {
 
 
                 </div>
-            <div className="px-12 border-b border-dashed border-zinc-300 py-2"><a href="">Blogs</a></div>
-            <div className="px-12 border-b border-dashed border-zinc-300 py-2"><a href="">Parts</a></div>
+            <div className="px-12 border-b border-dashed border-zinc-300 py-2"><a href="/blogs">Blogs</a></div>
+            <div className="px-12 border-b border-dashed border-zinc-300 py-2"><a href="/parts">Parts</a></div>
             <div className="px-12 py-2"><a href="/contact">Contact Us</a></div>
         </menu>
     </>

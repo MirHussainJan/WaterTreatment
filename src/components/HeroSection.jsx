@@ -1,8 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import img1 from "../assets/img1.png";
 import img3 from "../assets/img3.png";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -12,15 +13,17 @@ const slides = [
       "From expert consultation to ongoing maintenance, we deliver end-to-end water treatment excellence. Our comprehensive services include design, fabrication, installation, and dedicated maintenance support. Trust our state-of-the-art technology and expert team to provide sustainable solutions that ensure pure water while protecting our environment.",
     button: "Call Us",
     image: img1,
+    to:"/contact"
   },
   {
     id: 2,
-    title: "Water Engineering",
+    title: "Innovators Water Treatment",
     description:
-      "At WATER ENGINEERING, we revolutionize water treatment with cost-effective solutions. Based in Dubai Investment Park 2, UAE, we lead the MENA region in advanced water treatment. As an ISO 9001-2015 certified company and proud member of the World Water Quality Association, we deliver solutions and quality standards.",
+      "At INNOVATORS, we revolutionize water treatment with cost-effective solutions. Based in Dubai Investment Park 2, UAE, we lead the MENA region in advanced water treatment. As an ISO 9001-2015 certified company and proud member of the World Water Quality Association, we deliver solutions and quality standards.",
     button: "Get In Touch",
     image:
       "https://waterengineering.ae/wp-content/uploads/2024/12/Home-Page-Banners-02-scaled.jpg",
+    to:"/contact"
   },
   {
     id: 3,
@@ -29,23 +32,41 @@ const slides = [
       "From expert consultation to ongoing maintenance, we deliver end-to-end water treatment excellence. Our comprehensive services include design, fabrication, installation, and dedicated maintenance support. Trust our state-of-the-art technology and expert team to provide sustainable solutions that ensure pure water while protecting our environment.",
     button: "Call Us",
     image: img3,
+    to:"/contact"
   },
 ];
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
+  const intervalRef = useRef();
 
-  // Auto slide every 6s
-  useEffect(() => {
-    const interval = setInterval(() => {
+  // Helper to clear and restart interval
+  const restartInterval = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, 6000);
-    return () => clearInterval(interval);
+  };
+
+  useEffect(() => {
+    restartInterval();
+    return () => clearInterval(intervalRef.current);
+    // eslint-disable-next-line
   }, []);
 
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
-  const prevSlide = () =>
+  // When user interacts, reset interval
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % slides.length);
+    restartInterval();
+  };
+  const prevSlide = () => {
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+    restartInterval();
+  };
+  const goToSlide = (index) => {
+    setCurrent(index);
+    restartInterval();
+  };
 
   return (
     <section className="relative h-[60vh] overflow-hidden">
@@ -69,9 +90,9 @@ export default function HeroCarousel() {
               <p className="text-sm px-8 md:text-lg mb-6 text-white">
                 {slide.description}
               </p>
-              <button className="cursor-pointer hover:brightness-90 text-white px-8 py-3 rounded-md font-semibold bg-black bg-linear-to-b from-[#01008C] to-[#09529fd9]">
+              <Link to={slide.to} className="cursor-pointer hover:brightness-90 text-white px-8 py-3 rounded-md font-semibold bg-black bg-linear-to-b from-[#01008C] to-[#09529fd9]">
                 {slide.button}
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -96,7 +117,7 @@ export default function HeroCarousel() {
         {slides.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrent(index)}
+            onClick={() => goToSlide(index)}
             className={`w-2 h-2 rounded-full ${
               index === current ? "bg-blue-900" : "bg-white"
             }`}
