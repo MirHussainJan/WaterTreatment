@@ -1,4 +1,4 @@
-export default function ProjectJourney() {
+export default function BenefitsSection() {
   const steps = [
     {
       title: "Quality",

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export default function SAction({ click, setClick }) {
+export default function Action({ click, setClick }) {
   // If modal not active, don’t render it
   if (!click) return null;
 
