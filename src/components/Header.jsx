@@ -10,6 +10,7 @@ import {
 import { CgMenuRight } from "react-icons/cg";
 import { IoIosMail } from "react-icons/io";
 import Menu from "./ui/Menu";
+import { ChevronDown } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 export default function Header() {
@@ -17,13 +18,14 @@ export default function Header() {
   const location = useLocation(); // 👈 gets current route pathname
 
   const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Technologies", href: "/technologies" },
-    { name: "Industries", href: "/industries" },
-    { name: "Blogs", href: "/blogs" },
-    { name: "Parts", href: "/parts" },
-    { name: "Contact Us", href: "/contact" },
-  ];
+  { name: "Home", href: "/" },
+  { name: "About Us", href: "/about" },
+  { name: "Technologies", href: "/technologies", icon: <ChevronDown size={16} /> },
+  { name: "Industries", href: "/industries", icon: <ChevronDown size={16} /> },
+  { name: "Blogs", href: "/blogs" },
+  { name: "Parts", href: "/parts" },
+  { name: "Contact Us", href: "/contact" },
+];
 
   return (
     <>
@@ -67,7 +69,10 @@ export default function Header() {
                       : "text-gray-600 hover:text-[#01008c]"
                   }`}
                 >
-                  {link.name}
+                  <div className="flex items-center gap-1">
+                    {link.name}
+                    {link.icon && <span>{link.icon}</span>}
+                  </div>
                 </Link>
               );
             })}

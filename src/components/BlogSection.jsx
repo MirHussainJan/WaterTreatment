@@ -20,7 +20,7 @@ export default function BlogSection() {
   ]
 
   return (
-    <section className="py-16 bg-[#ECF2F6] flex-wrap">
+    <section className="py-16 bg-[#ECF2F6] flex-wrap md:px-4">
       <div className="max-w-[1140px] mx-auto ">
         {/* Heading */}
         <div className="text-center mb-12">

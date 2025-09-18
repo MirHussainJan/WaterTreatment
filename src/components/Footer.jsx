@@ -11,7 +11,7 @@ export default function Footer()
 {
   
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-4 flex flex-col flex-wrap" style={{ backgroundImage: "url('https://waterengineering.ae/wp-content/uploads/2024/09/Footer-image-scaled.jpg')" }}>
+    <footer className="bg-gray-900 text-white pt-16 pb-4 flex flex-col flex-wrap md:px-4" style={{ backgroundImage: "url('https://waterengineering.ae/wp-content/uploads/2024/09/Footer-image-scaled.jpg')" }}>
       <section className="container px-4 mx-auto md:px-10 flex flex-col md:flex-row justify-between md:items-center mb-10 border-b border-gray-700 pb-10 max-w-[1140px]">
           <div className="w-40 h-15 mb-4 md:w-45 md:h-20 bg-white py-1 rounded-lg flex items-center px-2">
                <img className=" w-full " src="/Logo.png" alt="" />

@@ -5,17 +5,15 @@ import img4 from "../assets/Imgs/Reverse-osmosis.png";
 import img5 from "../assets/Imgs/Deionization.png";
 import img6 from "../assets/Imgs/Water-Ionization.png";
 import { Card, CardContent } from "./ui/Card";
+import { Link } from "react-router-dom";
 const TechCards = () => {
   const technologies = [
-    {
-      name: "Custom Purification Systems",
-      image: img1,
-    },
-    { name: "Water Softening", image: img2 },
-    { name: "Desalination", image: img3 },
-    { name: "Reverse Osmosis", image: img4 },
-    { name: "Deionization", image: img5 },
-    { name: "Water Ionization", image: img6 },
+    {name: "Custom Purification Systems", image: img1, href: "/technologies/water-purification"},
+    { name: "Water Softening", image: img2, href: "/technologies/water-softening" },
+    { name: "Desalination", image: img3, href: "/technologies/desalination" },
+    { name: "Reverse Osmosis", image: img4, href: "/technologies/reverse-osmosis" },
+    { name: "Deionization", image: img5, href: "/technologies/deionization" },
+    { name: "Water Ionization", image: img6, href: "/technologies/water-ionization" },
     {
       name: "Sterilization Water Treatment Systems",
       image: "/INNOVATORS (26).png",
@@ -48,7 +46,7 @@ const TechCards = () => {
               className="w-full object-cover scale-[1]"
             />
             <h3 className="text-base font-bold text-[#01008c] py-6 transition-colors duration-300 group-hover:bg-[#01008c] group-hover:text-white rounded-b-2xl">
-              {tech.name}
+              <Link to={tech.href}>{tech.name}</Link>
             </h3>
           </CardContent>
         </Card>

@@ -105,12 +105,12 @@ export default function ClientTestimonials() {
           <div className="relative flex items-center">
             {/* Left Chevron */}
             <button
-              className="absolute left-0 z-10 bg-white rounded-full shadow p-2 -translate-x-1/2 top-1/2 -translate-y-1/2 disabled:opacity-30"
+              className="absolute left-6 z-10 bg-white rounded-full shadow p-2 -translate-x-1/2 top-1/2 -translate-y-1/2 disabled:opacity-30"
               onClick={() => setCurrent(current - 1)}
               disabled={!canGoLeft}
               aria-label="Previous"
             >
-              <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
+              <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7"/></svg>
             </button>
             {/* Carousel Cards */}
             <div className="flex w-full overflow-hidden relative">
@@ -171,12 +171,12 @@ export default function ClientTestimonials() {
             </div>
             {/* Right Chevron */}
             <button
-              className="absolute right-0 z-10 bg-white rounded-full shadow p-2 translate-x-1/2 top-1/2 -translate-y-1/2 disabled:opacity-30"
+              className="absolute right-6 z-10 bg-white rounded-full shadow p-2 translate-x-1/2 top-1/2 -translate-y-1/2 disabled:opacity-30"
               onClick={() => setCurrent(current + 1)}
               disabled={!canGoRight}
               aria-label="Next"
             >
-              <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
             </button>
           </div>
         </div>

@@ -31,7 +31,7 @@ export default function Carousel() {
     stopAutoPlay();
     intervalRef.current = setInterval(() => {
       nextSlide();
-    }, 8000);
+    }, 2000);
   };
 
   const stopAutoPlay = () => {

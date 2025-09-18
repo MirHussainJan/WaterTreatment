@@ -5,6 +5,7 @@ import img3 from "../assets/Imgs/Desalination.jpg";
 import img4 from "../assets/Imgs/Reverse-osmosis.png";
 import img5 from "../assets/Imgs/Deionization.png";
 import img6 from "../assets/Imgs/Water-Ionization.png";
+import { Link } from "react-router-dom";
 export default function AdvancedTechnologies() {
   const technologies = [
     {
@@ -60,7 +61,7 @@ export default function AdvancedTechnologies() {
 
         <div className="text-center ">
           <button className="bg-[linear-gradient(180deg,#01008c_0%,#063977_100%)] hover:-translate-y-2.5 transition duration-400 cursor-pointer py-6 px-12 font-semibold rounded-sm text-sm text-white">
-            View All Technologies
+            <Link onClick={() => window.scrollTo(0, 0)} to="/technologies">View All Technologies</Link>
           </button>
         </div>
       </div>
