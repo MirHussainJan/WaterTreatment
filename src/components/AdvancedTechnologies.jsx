@@ -1,4 +1,4 @@
-import { Card, CardContent } from "./ui/Card";
+import { CardContent } from "./ui/Card";
 import img1 from "../assets/Imgs/CPS.png";
 import img2 from "../assets/Imgs/WaterSoftening.png";
 import img3 from "../assets/Imgs/Desalination.jpg";
@@ -41,11 +41,12 @@ export default function AdvancedTechnologies() {
 
         <div className="grid md:grid-cols-3 gap-6 mb-12 ">
           {technologies.map((tech, index) => (
-            <Card
+            <Link
+              to="/technologies"
               key={index}
               className="shadow-[0_0_15px_0_rgba(0,0,0,0.14)] w-[90%] bg-white md:w-full mx-auto overflow-hidden group rounded-2xl "
             >
-              <CardContent className="text-center w-full">
+              <CardContent className="text-center w-full h-full flex flex-col itmes-center justify-between">
                 <img
                   src={tech.image || "/placeholder.svg"}
                   alt={tech.name}
@@ -55,7 +56,7 @@ export default function AdvancedTechnologies() {
                   {tech.name}
                 </h3>
               </CardContent>
-            </Card>
+            </Link>
           ))}
         </div>
 

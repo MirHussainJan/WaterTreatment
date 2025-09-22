@@ -8,38 +8,34 @@ import { Card, CardContent } from "./ui/Card";
 import { Link } from "react-router-dom";
 const TechCards = () => {
   const technologies = [
-    {name: "Custom Purification Systems", image: img1, href: "/technologies/water-purification"},
-    { name: "Water Softening", image: img2, href: "/technologies/water-softening" },
-    { name: "Desalination", image: img3, href: "/technologies/desalination" },
-    { name: "Reverse Osmosis", image: img4, href: "/technologies/reverse-osmosis" },
-    { name: "Deionization", image: img5, href: "/technologies/deionization" },
-    { name: "Water Ionization", image: img6, href: "/technologies/water-ionization" },
-    {
-      name: "Sterilization Water Treatment Systems",
-      image: "/INNOVATORS (26).png",
-    },
-    { name: "Ultravoilet Disinfection", image: "/INNOVATORS (13).png" },
-    { name: "Ion Exchange", image: "/INNOVATORS (24).png" },
-    { name: "Activated Carbon Filtration", image: "/INNOVATORS (15).png" },
-    { name: "Sedimentation", image: "/INNOVATORS (23).png" },
-    { name: "Copper Silver Ionization", image: "/INNOVATORS (17).png" },
-    {
-      name: "Membrane Cleaning Systems",
-      image: "/INNOVATORS (22).png",
-    },
-    { name: "Media Filters", image: "/INNOVATORS (19).png" },
-    { name: "Water Chillers", image: "/INNOVATORS (20).png" },
-    { name: "Self Cleaning Filtration", image: "/INNOVATORS (21).png" },
-    { name: "Cartridge Filter Housings", image: "/INNOVATORS (20).png" },
+      {name: "Custom Purification Systems", image: img1, href: "/technologies/water-purification"},
+      { name: "Water Softening", image: img2, href: "/technologies/water-softening" },
+      { name: "Desalination", image: img3, href: "/technologies/Desalination" },
+      { name: "Reverse Osmosis", image: img4, href: "/technologies/reverse-osmosis" },
+      { name: "Deionization", image: img5, href: "/technologies/deionization" },
+      { name: "Water Ionization", image: img6, href: "/technologies/water-ionization" },
+      { name: "Sterilization Water Treatment Systems", image: "/INNOVATORS (26).png", href: "/technologies/sterilization-water-treatment-systems" },
+      { name: "Ultravoilet Disinfection", image: "/INNOVATORS (13).png", href: "/technologies/ultravoilet-disinfection" },
+      { name: "Ion Exchange", image: "/INNOVATORS (24).png", href: "/technologies/ion-exchange" },
+      { name: "Activated Carbon Filtration", image: "/INNOVATORS (15).png", href: "/technologies/activated-carbon-filtration" },
+      { name: "Sedimentation", image: "/INNOVATORS (23).png", href: "/technologies/sedimentation" },
+      { name: "Copper Silver Ionization", image: "/INNOVATORS (17).png", href: "/technologies/copper-silver-ionization" },
+      { name: "Membrane Cleaning Systems", image: "/INNOVATORS (22).png", href: "/technologies/membrane-cleaning-systems" },
+      { name: "Media Filters", image: "/INNOVATORS (19).png", href: "/technologies/media-filters" },
+      { name: "Water Chillers", image: "/INNOVATORS (20).png", href: "/technologies/water-chillers" },
+      { name: "Self Cleaning Filtration", image: "/INNOVATORS (21).png", href: "/technologies/self-cleaning-filtration" },
+      { name: "Cartridge Filter Housings", image: "/INNOVATORS (20).png", href: "/technologies/cartridge-filter-housings" },
   ];
   return (
     <div className="grid md:grid-cols-3 gap-8 mb-12 max-w-[1140px] mx-auto py-16">
       {technologies.map((tech, index) => (
-        <Card
+        <Link
+          onClick={() => window.scrollTo(0, 0)}
+          to={tech.href || "#"}
           key={index}
-          className="shadow-[0_0_15px_0_rgba(0,0,0,0.14)] w-[90%] bg-white md:w-full mx-auto overflow-hidden group rounded-2xl "
+          className="shadow-[0_0_15px_0_rgba(0,0,0,0.14)] w-[90%] bg-white md:w-full mx-auto overflow-hidden group rounded-2xl"
         >
-          <CardContent className="text-center w-full">
+          <CardContent className="text-center w-full h-full flex flex-col itmes-center justify-between">
             <img
               src={tech.image || "/placeholder.svg"}
               alt={tech.name}
@@ -49,7 +45,7 @@ const TechCards = () => {
               <Link to={tech.href}>{tech.name}</Link>
             </h3>
           </CardContent>
-        </Card>
+        </Link>
       ))}
     </div>
   );

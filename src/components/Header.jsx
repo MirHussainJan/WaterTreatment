@@ -7,7 +7,7 @@ import {
   FaXTwitter,
   FaYoutube,
 } from "react-icons/fa6";
-import { CgMenuRight } from "react-icons/cg";
+import { CgMenuRight, CgClose } from "react-icons/cg";
 import { IoIosMail } from "react-icons/io";
 import Menu from "./ui/Menu";
 import { ChevronDown } from "lucide-react";
@@ -51,7 +51,7 @@ export default function Header() {
         </div>
       </div>
       <header className="bg-white sticky top-0 z-100 w-full shadow-md">
-        <div className=" max-w-[1140px] flex justify-between items-center mx-auto py-4 px-4 lg:px-0">
+        <div className=" max-w-[1140px] flex justify-between items-center mx-auto pt-4 px-4 lg:px-0">
           <div className="flex items-center justify-between py-4">
             <img src="/Logo.png" alt="Water Engineering Logo" className="w-38" />
           </div>
@@ -78,10 +78,11 @@ export default function Header() {
             })}
           </nav>
           <button
-            className="bg-zinc-300 py-1 px-3 rounded font-bold cursor-pointer flex lg:hidden"
+            className="bg-zinc-300 py-1 px-3 rounded font-bold cursor-pointer flex lg:hidden transition-colors duration-300"
             onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
           >
-            <CgMenuRight size={26} />
+            {menuOpen ? <CgClose size={26} /> : <CgMenuRight size={26} />}
           </button>
         </div>
         <div

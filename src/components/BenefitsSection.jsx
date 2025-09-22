@@ -3,22 +3,22 @@ export default function ProjectJourney() {
     {
       title: "Quality",
       desc: "We focus on delivering components that stand the test of time, built to meet the strictest quality standards in the industry.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Quality-Icon.svg",
+      icon: "/Quality-Icon.svg",
     },
     {
       title: "Usability",
       desc: "Our products are designed with simplicity and practicality in mind, making them easy to use and integrate into your existing systems.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Usability-Icon.svg",
+      icon: "Usability-Icon.svg",
     },
     {
       title: "Reliability",
       desc: "You can trust our solutions to work consistently and efficiently, no matter how challenging the environment.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Reliability-Icon.svg",
+      icon: "Reliability-Icon.svg",
     },
     {
       title: "Service Support",
       desc: "We’re here to help whenever you need it, with a dedicated team ready to provide support and keep your systems running smoothly.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Service-Support-Icon.svg",
+      icon: "Service-Support-Icon.svg",
     },
   ]
  

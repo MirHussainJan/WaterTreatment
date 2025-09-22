@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = {
-  image1: "https://waterengineering.ae/wp-content/uploads/2024/09/4.png",
-  image2: "https://waterengineering.ae/wp-content/uploads/2024/09/5.png",
-  image3: "https://waterengineering.ae/wp-content/uploads/2024/09/6.png",
-  image4: "https://waterengineering.ae/wp-content/uploads/2024/09/1.png",
-  image5: "https://waterengineering.ae/wp-content/uploads/2024/09/2.png",
-  image6: "https://waterengineering.ae/wp-content/uploads/2024/09/3.png",
+  image1: "/4.png",
+  image2: "/5.png",
+  image3: "/6.png",
+  image4: "/1.png",
+  image5: "/2.png",
+  image6: "/3.png",
 };
 
 export default function Carousel() {

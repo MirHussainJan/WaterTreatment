@@ -1,5 +1,3 @@
-import { Section } from "lucide-react";
-
 export default function HeroSection({ title, description, imgUrl }) {
   return (
     <>

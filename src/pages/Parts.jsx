@@ -82,7 +82,7 @@ const Parts = () => {
   const IndustrialProducts = [
     {
       name: "Industrial Deionizer System",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Industrial-Deionizer-System-1024x683.jpg",
+      img: "/Industrial-Deionizer-System-1024x683.jpg",
     },
     {
       name: "Industrial RO Membrane",
@@ -90,7 +90,7 @@ const Parts = () => {
     },
     {
       name: "Industrial Water Softener",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Industrial-Water-Softener-1024x683.jpg",
+      img: "/Industrial-Water-Softener-1024x683.jpg",
     },
     {
       name: "Multimedia Filter",
@@ -98,11 +98,11 @@ const Parts = () => {
     },
     {
       name: "Sea Water RO Plant",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Sea-Water-RO-Plant-1024x683.jpg",
+      img: "/Sea-Water-RO-Plant-1024x683.jpg",
     },
     {
       name: "Industrial RO Plant",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Industrial-RO-Plant-1024x683.jpg",
+      img: "/Industrial-RO-Plant-1024x683.jpg",
     },
     {
       name: "Self Cleaning Filter",
@@ -118,7 +118,7 @@ const Parts = () => {
     },
     {
       name: "Containerized RO Plant",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Containerized-RO-Plant-1024x683.jpg",
+      img: "/Containerized-RO-Plant-1024x683.jpg",
     },
   ];
   return (
@@ -127,7 +127,7 @@ const Parts = () => {
       <SubHero
         title={"Parts"}
         img={
-          "https://waterengineering.ae/wp-content/uploads/2025/01/parts-Image-BG-scaled.jpg"
+          "/parts-Image-BG-scaled.jpg"
         }
         desc={
           "Quality components for every water treatment solution. Our comprehensive range of parts keeps your systems running at peak efficiency."

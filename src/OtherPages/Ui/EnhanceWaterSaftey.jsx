@@ -5,7 +5,7 @@ export default function EnhanceWaterSafety({title, dec, point1, point2, point3, 
   return (
     <section className='w-full py-16 bg-white'>
         <main className='mx-3 max-w-[1140px] md:mx-4 xl:mx-auto bg-[#ECF2F6] rounded-2xl flex flex-col md:flex-row gap-10'>
-            <div className='h-80 md:h-auto w-full md:w-[35%]  bg-[url("https://waterengineering.ae/wp-content/uploads/2024/10/abstract-2-819x1024.jpg")] bg-cover bg-center rounded-t-2xl md:rounded-t-none md:rounded-l-2xl'>
+            <div className='h-80 md:h-auto w-full md:w-[35%]  bg-[url("/abstract-2-819x1024.jpg")] bg-cover bg-center rounded-t-2xl md:rounded-t-none md:rounded-l-2xl'>
 
             </div>
             <div className='md:w-[60%] px-4 md:px-4 md:pl-16 py-2 md:py-40 '>

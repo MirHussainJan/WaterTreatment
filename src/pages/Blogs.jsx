@@ -7,7 +7,7 @@ const Blogs = () => {
   return (
     <>
       <Header />
-      <SubHero title={"Latest Articles"} desc="Dive into expert knowledge about water treatment innovations and solutions. From industry updates to technical insights, discover what’s making waves in water engineering." img={"https://waterengineering.ae/wp-content/uploads/2025/01/Blogs-Image-BG-scaled.jpg"}/>
+      <SubHero title={"Latest Articles"} desc="Dive into expert knowledge about water treatment innovations and solutions. From industry updates to technical insights, discover what’s making waves in water engineering." img={"/Blogs-Image-BG-scaled.jpg"}/>
       <BlogSection />
       <Footer />
     </>

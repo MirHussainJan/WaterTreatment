@@ -18,22 +18,22 @@ const Home = () => {
     {
       title: "Design",
       desc: "We create custom designs that fit your needs perfectly, making sure everything works just right.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Untitled-5-01.svg",
+      icon: "Untitled-5-01.svg",
     },
     {
       title: "Fabrication",
       desc: "Our team carefully puts everything together to bring your design to life with care and attention.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Untitled-5-02.svg",
+      icon: "Untitled-5-02.svg",
     },
     {
       title: "Onsite Installation",
       desc: "We install the system at your site, making sure it’s set up and ready to run smoothly.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Untitled-5-03.svg",
+      icon: "Untitled-5-03.svg",
     },
     {
       title: "Servicing",
       desc: "We provide ongoing service and maintenance to keep your system running efficiently for the long term.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/12/Untitled-5-04.svg",
+      icon: "Untitled-5-04.svg",
     },
   ]
   return (

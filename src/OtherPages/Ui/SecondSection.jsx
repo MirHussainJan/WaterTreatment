@@ -9,7 +9,7 @@ export default function SecondSection({ title, desc}) {
                   <p className='text-base text-gray-600 px-4 md:px-0'>{desc}</p>
             </div>
             <div className='px-4 md:px-0 lg:w-[45%] h-100'>
-                <img className='w-full h-full object-cover' src="https://waterengineering.ae/wp-content/uploads/2024/10/abstract-2-819x1024.jpg" alt="" />
+                <img className='w-full h-full object-cover' src="/abstract-2-819x1024.jpg" alt="" />
             </div>
 
         </main>

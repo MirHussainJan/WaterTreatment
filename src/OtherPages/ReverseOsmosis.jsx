@@ -17,30 +17,30 @@ import MergeSection from './Ui/MergeSection'
 export default function ReverseOsmosis() {
   const steps = [
     {
-      title: "Customized Design Solutions",
-      desc: "Analyze your specific water quality needs and design a customized Reverse Osmosis system to meet those requirements.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Reverse-Osmosis-01.png",
+      title: "Detailed Needs Assessment",
+      desc: "We analyze your specific water quality requirements to create an effective custom purification system that fits your needs",
+      icon: "/Custom-Purification-Systems-01.png",
     },
     {
-      title: "Professional Installation",
-      desc: "Source high-quality components and expertly install the system for optimal performance and reliability.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Reverse-Osmosis-02.png",
+      title: "Expert Installation Process",
+      desc: "Our skilled technicians ensure proper installation of the custom purification system for seamless integration and reliable performance",
+      icon: "/Custom-Purification-Systems-02.png",
     },
     {
-      title: "Comprehensive Testing",
-      desc: "Conduct thorough testing to ensure the system operates efficiently and meets all quality standards.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Reverse-Osmosis-03.png",
+      title: "Rigorous System Testing",
+      desc: "Thorough testing is conducted to verify that your custom purification system operates efficiently and meets industry standards .",
+      icon: "/Custom-Purification-Systems-03.png",
     },
     {
-      title: "Ongoing Maintenance and Support",
-      desc: "Provide training and establish a maintenance plan to ensure long-term efficiency and support for your system.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Reverse-Osmosis-04.png",
+      title: "Continuous Maintenance Support",
+      desc: "We provide ongoing maintenance services to keep your custom purification system running smoothly for long-lasting results",
+      icon: "/Custom-Purification-Systems-04.png",
     },
   ]
   return (
     <>
         <Header />
-        <HeroSection title={"Reverse Osmosis"} description={"Raise your water purity standards with Water Engineering.ae, the leading water filter supplier. Our Reverse Osmosis systems are meticulously designed to provide you with crystal-clear, safe drinking water. Whether you’re looking for the best reverse osmosis system for your home or need a reliable reverse osmosis filtration system for industrial applications, Water Engineering.ae has you covered. Trust us to deliver unparalleled water purification with the latest reverse osmosis technology, ensuring every sip is a testament to purity."} imgUrl={"/Reverse-osmosis.png"}/>
+  <HeroSection title={"Reverse Osmosis"} description={"Raise your water purity standards with Water Engineering.ae, the leading water filter supplier. Our Reverse Osmosis systems are meticulously designed to provide you with crystal-clear, safe drinking water. Whether you’re looking for the best reverse osmosis system for your home or need a reliable reverse osmosis filtration system for industrial applications, Water Engineering.ae has you covered. Trust us to deliver unparalleled water purification with the latest reverse osmosis technology, ensuring every sip is a testament to purity."} imgUrl={"/Reverse-osmosis.png"}/>
 
         <SecondSection title={"The Power of Reverse Osmosis: Pure Water, Pure Life"} desc={"Reverse osmosis is a sophisticated water filtration method that removes impurities from water by forcing it through a semipermeable membrane. This process blocks contaminants larger than water molecules, such as salts, bacteria, and chemicals, effectively purifying the water. Utilized in both residential and commercial settings, reverse osmosis not only enhances the taste and safety of drinking water but also extends the life of appliances by reducing mineral buildup. With Our reverse osmosis systems, you get nothing but pure, clean water every time."}/>
 

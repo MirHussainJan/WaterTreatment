@@ -17,30 +17,30 @@ import MergeSection from './Ui/MergeSection'
 export default function WaterIonization() {
   const steps = [
     {
-      title: "Personalized System Design",
-      desc: "Evaluate your water quality needs and design a custom water ionization system to fit your requirements.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Water-Ionization-Icon-01.png",
+      title: "Detailed Needs Assessment",
+      desc: "We analyze your specific water quality requirements to create an effective custom purification system that fits your needs",
+      icon: "/Custom-Purification-Systems-01.png",
     },
     {
-      title: "Expert Installation Services",
-      desc: "Partner with trusted water ionizer suppliers to ensure quality components are installed for optimal performance",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Reverse-Osmosis-02.png",
+      title: "Expert Installation Process",
+      desc: "Our skilled technicians ensure proper installation of the custom purification system for seamless integration and reliable performance",
+      icon: "/Custom-Purification-Systems-02.png",
     },
     {
-      title: "Thorough Quality Testing",
-      desc: "Conduct comprehensive testing to guarantee the effectiveness of the water ionization and purification process, ensuring safety.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Water-Ionization-Icon-03.png",
+      title: "Rigorous System Testing",
+      desc: "Thorough testing is conducted to verify that your custom purification system operates efficiently and meets industry standards .",
+      icon: "/Custom-Purification-Systems-03.png",
     },
     {
-      title: "Reliable Maintenance Support",
-      desc: "Offer ongoing water ionizer service and maintenance to keep your system running efficiently for years to come.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Reverse-Osmosis-04.png",
+      title: "Continuous Maintenance Support",
+      desc: "We provide ongoing maintenance services to keep your custom purification system running smoothly for long-lasting results",
+      icon: "/Custom-Purification-Systems-04.png",
     },
   ]
   return (
     <>
         <Header />
-        <HeroSection title={"Water Ionization"} description={"Experience enhanced water quality with Water Engineering.ae, your trusted source for innovative water treatment solutions. Our advanced water ionization system transforms ordinary water into ionized, alkaline water, supporting hydration and overall wellness. The advanced water ionization machine delivers pure, refreshing water that’s ideal for daily use. Searching for the best water ionizer for home? Water Engineering.ae has the solution you need. Upgrade your water quality today, contact us for expert assistance and solutions."} imgUrl={"/Reverse-osmosis.png"}/>
+  <HeroSection title={"Water Ionization"} description={"Experience enhanced water quality with Water Engineering.ae, your trusted source for innovative water treatment solutions. Our advanced water ionization system transforms ordinary water into ionized, alkaline water, supporting hydration and overall wellness. The advanced water ionization machine delivers pure, refreshing water that’s ideal for daily use. Searching for the best water ionizer for home? Water Engineering.ae has the solution you need. Upgrade your water quality today, contact us for expert assistance and solutions."} imgUrl={"/Water-Ionization.png"}/>
 
         <SecondSection title={"Water Ionization: Your Solution for Cleaner, Healthier Water"} desc={"Water ionization is an advanced treatment method that enhances water quality by producing ionized, alkaline water. Unlike standard filtration, alkaline water ionization enriches drinking water with essential minerals, improving taste and hydration benefits. Curious about the difference between a water ionizer for drinking water and traditional filtration, like water ionizer vs reverse osmosis? At Water Engineering.ae, we provide customized solutions for the cleanest, healthiest water possible. Discover the transformative power of water ionization contact us today for more information!"}/>
 

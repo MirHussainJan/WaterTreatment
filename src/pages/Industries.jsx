@@ -7,57 +7,57 @@ const Industries = () => {
     {
       title: "Reliable Water Solutions for Hospitals and Medical Labs",
       desc: "Ensure hospitals and medical labs maintain top water quality with Water Engineering advanced treatment systems, designed for safety and optimal",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/12/Reliable-Water-Solutions-for-Hospitals-and-Medical-Labs-01-1024x528.jpg",
+      img: "Reliable-Water-Solutions-for-Hospitals-and-Medical-Labs-01-1024x528.jpg",
     },
     {
       title: "Water Quality Management for Construction and Concrete Production",
       desc: "Ensure hospitals and medical labs maintain top water quality with Water Engineering advanced treatment systems, designed for safety and optimal",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-10-1024x480.jpg",
+      img: "/Banner-10-1024x480.jpg",
     },
     {
       title: "Innovative Water Filtration for Paints and Coatings Manufacturing",
       desc: "Optimize your paints and coatings manufacturing process with Water Engineering.ae advanced water systems, ensuring superior product quality and efficient production",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-09-1024x480.jpg",
+      img: "/Banner-09-1024x480.jpg",
     },
     {
       title: "Water Filtration for Perfume and Fragrance Manufacturing",
       desc: "Ensure the highest water quality for perfume and fragrance manufacturing with Water Engineering.ae specialized treatment systems, enhancing purity and production",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-08-1024x480.jpg",
+      img: "/Banner-08-1024x480.jpg",
     },
     {
       title: "Water Treatment Solutions for Paper and Pulp Industry",
       desc: "Ensure consistent quality in paper and pulp production with Water Engineering.ae specialized water treatment systems, enhancing efficiency and meeting industry",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-07-1024x480.jpg",
+      img: "/Banner-07-1024x480.jpg",
     },
     {
       title: "Advanced Water Solutions for Oil and Gas Refining",
       desc: "Ensure optimal water quality for oil and gas operations with Water Engineering.ae advanced treatment systems, designed for efficiency, safety, and environmental compliance.",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-06-1024x480.jpg",
+      img: "/Banner-06-1024x480.jpg",
     },
     {
       title: "Reliable Water Systems for Chemical Manufacturing",
       desc: "Transform your Chemical Manufacturing processes with Water Engineering.ai advanced treatment solutions, ensuring optimal water purity for reliable production.",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-05-1024x480.jpg",
+      img: "/Banner-05-1024x480.jpg",
     },
     {
       title: "Industrial Water Filtration for Textile and Dyeing Industry",
       desc: "Ensure high-quality water for textiles and dyeing with Water Engineering.ae advanced treatment solutions, enhancing efficiency and maintaining vibrant, consistent results.",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-04-1024x480.jpg",
+      img: "/Banner-04-1024x480.jpg",
     },
     {
       title: "Efficient Filtration Systems for Food and Beverage Industries",
       desc: "Enhance your food and beverage quality with Water Engineering.ae advanced filtration systems, ensuring purity and safety throughout the production process.",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-03-1024x480.jpg",
+      img: "/Banner-03-1024x480.jpg",
     },
     {
       title: "Best pharmaceuticals water purification systems",
       desc: "Transform your pharmaceutical operations with Water Engineering.ae advanced Pharmaceuticals purification systems, ensuring optimal water quality for every process.",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-02-1024x480.jpg",
+      img: "/Banner-02-1024x480.jpg",
     },
     {
       title: "Essential Water Filter Systems for Agriculture and Gardening Use",
       desc: "Enhance your Agriculture and Gardening practices with Water Engineering.ae advanced water treatment systems, ensuring clean and sustainable water use for optimal growth.",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/11/Banner-01-1024x480.jpg",
+      img: "/Banner-01-1024x480.jpg",
     },
     {
       title: "Best water filtration systems for hotel and Restaurants",
@@ -71,7 +71,7 @@ const Industries = () => {
       <SubHero
         title="Industries We Serve"
         desc="We provide comprehensive water treatment solutions across a variety of industries, ensuring optimal water quality and sustainability."
-        img="https://waterengineering.ae/wp-content/uploads/2025/01/Industries-Image-BG-scaled.jpg"
+        img="/Industries-Image-BG-scaled.jpg"
       />
       <section className="w-full bg-[#F2F2F5]">
         <div className="grid md:grid-cols-2 grid-cols-1 justify-between gap-8 flex-col lg:flex-row max-w-[1140px] mx-auto py-16 md:px-0 px-4">

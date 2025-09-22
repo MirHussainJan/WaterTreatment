@@ -9,7 +9,7 @@ export default function VideoSection() {
     <>
       <SAction click={click} setClick={setClick} />
 
-      <section className="py-16 bg-[url(https://waterengineering.ae/wp-content/uploads/2024/09/vw_shape_bg_1.png)] bg-cover mx-auto">
+      <section className="py-16 bg-[url(/vw_shape_bg_1.png)] bg-cover mx-auto">
         <div className="container mx-auto px-4 max-w-[1140px]">
           <div className="text-center mb-12">
             <p className="text-gray-600 font-semibold tracking-wide uppercase titl">
@@ -20,7 +20,7 @@ export default function VideoSection() {
             </h2>
           </div>
 
-          <div className="flex items-center max-w-3xl bg-[url(https://waterengineering.ae/wp-content/uploads/2024/09/Water-Desalination-Plants-UAE.jpg)] rounded-4xl mx-auto bg-cover">
+          <div className="flex items-center max-w-3xl bg-[url(/Water-Desalination-Plants-UAE.jpg)] rounded-4xl mx-auto bg-cover">
             <div className="w-full relative bg-gradient-to-tr from-[#399324]/82 to-[#111C6F]/90 rounded-4xl overflow-hidden">
               <div className="w-full">
                 <div className="aspect-video flex items-center justify-center">

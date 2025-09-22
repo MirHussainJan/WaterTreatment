@@ -29,7 +29,7 @@ export default function MergeSection({title, dec, videoUrl, Heading, description
       <section className="bg-[#ECF2F6] py-5 ">
         <main className=" max-w-[1140px] mx-auto flex flex-col xl:flex-row gap-15 pb-5 lg:px-4">
           <div className="xl:w-[50%]">
-            <div className="w-[95%] mx-auto lg:w-full md:mx-auto h-80 xl:h-full bg-[url(https://waterengineering.ae/wp-content/uploads/2024/09/Water-Desalination-Plants-UAE.jpg)] bg-cover md:rounded-2xl"></div>
+            <div className="w-[95%] mx-auto lg:w-full md:mx-auto h-80 xl:h-full bg-[url(/Water-Desalination-Plants-UAE.jpg)] bg-cover md:rounded-2xl"></div>
           </div>
           <div className="px-4 lg:px-0 xl:w-[50%]">
             <div>

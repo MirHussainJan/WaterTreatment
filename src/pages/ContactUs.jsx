@@ -43,19 +43,19 @@ const ContactUs = () => {
       name: "CALL NOW",
       title: "Phone Number",
       desc: "+971 4 269 524",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/09/call.png",
+      img: "/call.png",
     },
     {
       name: "SEND NOW",
       title: "Our Mail",
       desc: "marketing@ultratecuae.com",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/09/email.png",
+      img: "/email.png",
     },
     {
       name: "MEET US",
       title: "Our Address",
       desc: "S11 Near Arabian Adventures DIP 2 DUBAI",
-      img: "https://waterengineering.ae/wp-content/uploads/2024/09/location.png",
+      img: "/location.png",
     },
   ];
 
@@ -65,7 +65,7 @@ const ContactUs = () => {
       <SubHero
         title="Contact Us"
         desc="Let’s discuss your water treatment needs. Get in touch for pure water solutions. Our experts are ready to help you achieve optimal water quality."
-        img="https://waterengineering.ae/wp-content/uploads/2025/01/Contact-US-Image-BG-scaled.jpg"
+        img="/Contact-US-Image-BG-scaled.jpg"
       />
 
       <section className="py-16 bg-[#ECF2F6] px-4 md:px-0">

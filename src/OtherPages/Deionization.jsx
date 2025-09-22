@@ -17,30 +17,30 @@ import MergeSection from './Ui/MergeSection'
 export default function Deionization() {
   const steps = [
     {
-      title: "Customized System Design",
-      desc: "Assess your specific water quality needs and design a deionized water system for electronics that meets those requirements effectively.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Deionization-Icon-01.png",
+      title: "Detailed Needs Assessment",
+      desc: "We analyze your specific water quality requirements to create an effective custom purification system that fits your needs",
+      icon: "/Custom-Purification-Systems-01.png",
     },
     {
-      title: "Expert Installation",
-      desc: "Utilize high-quality components and expertly install your portable deionization system for optimal performance and reliability in various settings.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Reverse-Osmosis-02.png",
+      title: "Expert Installation Process",
+      desc: "Our skilled technicians ensure proper installation of the custom purification system for seamless integration and reliable performance",
+      icon: "/Custom-Purification-Systems-02.png",
     },
     {
-      title: "Thorough Performance Testing",
-      desc: "Conduct extensive testing to ensure the mixed bed deionization system operates efficiently and meets all necessary quality standards.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Deionization-Icon-03.png",
+      title: "Rigorous System Testing",
+      desc: "Thorough testing is conducted to verify that your custom purification system operates efficiently and meets industry standards .",
+      icon: "/Custom-Purification-Systems-03.png",
     },
     {
       title: "Continuous Maintenance Support",
-      desc: "Provide ongoing training and establish a maintenance plan to ensure long-term efficiency and support for your deionization system.",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Reverse-Osmosis-04.png",
+      desc: "We provide ongoing maintenance services to keep your custom purification system running smoothly for long-lasting results",
+      icon: "/Custom-Purification-Systems-04.png",
     },
   ]
   return (
     <>
         <Header />
-        <HeroSection title={"Deionization"} description={"Enhance your water quality with Water Engineering.ae advanced deionization water system. Our effective deionized water treatment solutions utilize the deionization process for water purification to remove impurities and minerals. Ideal for both residential and industrial needs, our systems ensure safe, high-quality water. We also offer a comprehensive desalination system for drinking water, providing reliable solutions for various applications. Contact Water Engineering.ae today to learn how our deionization systems can improve your water quality!"} imgUrl={"../assets/Images/WaterSoftening-BG-Image-scaled.jpg"}/>
+  <HeroSection title={"Deionization"} description={"Enhance your water quality with Water Engineering.ae advanced deionization water system. Our effective deionized water treatment solutions utilize the deionization process for water purification to remove impurities and minerals. Ideal for both residential and industrial needs, our systems ensure safe, high-quality water. We also offer a comprehensive desalination system for drinking water, providing reliable solutions for various applications. Contact Water Engineering.ae today to learn how our deionization systems can improve your water quality!"} imgUrl="/Industrial-Deionizer-System-1024x683.jpg"/>
 
         <SecondSection title={"Deionization Made Easy: Safe Water for Home and Industry"} desc={"Deionization is an effective water treatment method that removes dissolved ions and impurities, resulting in high-quality, purified water. Our industrial deionization system is expertly designed for large-scale applications, ensuring consistent water purity for various industrial needs. For residential use, we provide the best deionization system for home applications, delivering clean and safe water for everyday activities. As trusted desalination equipment suppliers, Water Engineering.ae offers reliable solutions customized to your specific requirements. “Reach us for pure and safe water!"}/>
 

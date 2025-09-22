@@ -1,11 +1,11 @@
 export default function Certifications() {
   const certifications = [
-    { name: "Dubai Chamber", logo: "https://waterengineering.ae/wp-content/uploads/2024/09/dubai-chamber-certi-1.jpg" },
-    { name: "ISO 9001", logo: "https://waterengineering.ae/wp-content/uploads/2024/09/iso9001-certifi-1.jpg" },
-    { name: "Water Quality Association", logo: "https://waterengineering.ae/wp-content/uploads/2024/09/water-qaulity-certifie-1.jpg" },
-    { name: "IAF", logo: "https://waterengineering.ae/wp-content/uploads/2024/09/iaf-certificate-1.jpg" },
-    { name: "DAC", logo: "https://waterengineering.ae/wp-content/uploads/2024/09/DAC-certificate-1.jpg" },
-    { name: "QRS", logo: "https://waterengineering.ae/wp-content/uploads/2024/09/QRS-certificate-1.jpg" },
+    { name: "Dubai Chamber", logo: "/dubai-chamber-certi.jpg" },
+    { name: "ISO 9001", logo: "/iso9001 certifi.jpg" },
+    { name: "Water Quality Association", logo: "/water-qaulity-certifie.jpg" },
+    { name: "IAF", logo: "/iaf-certificate.jpg" },
+    { name: "DAC", logo: "/DAC-certificate.jpg" },
+    { name: "QRS", logo: "/QRS-certificate.jpg" },
   ]
 
   return (
@@ -27,7 +27,7 @@ export default function Certifications() {
               key={index}
               className="w-[170px] h-[170px] bg-white rounded-lg shadow-[0_0_15px_0_rgba(0,0,0,0.14)]  flex items-center justify-center p-6 object-cover relative"
             >
-              <img className="absolute w-7 h-7 -top-2 left-3" src="https://waterengineering.ae/wp-content/uploads/2024/09/shield-trust.png" alt="" />
+              <img className="absolute w-7 h-7 -top-2 left-3" src="/shield-trust.png" alt="" />
               <img
                 src={cert.logo}
                 alt={cert.name}

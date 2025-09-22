@@ -17,30 +17,30 @@ import MergeSection from './Ui/MergeSection'
 export default function WaterSoftening() {
   const steps = [
     {
-      title: "Water Quality Assessment",
-      desc: "Evaluate your water quality to identify hardness levels and impurities needing removal for optimal softening",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Water-Softening-01.png",
+      title: "Detailed Needs Assessment",
+      desc: "We analyze your specific water quality requirements to create an effective custom purification system that fits your needs",
+      icon: "/Custom-Purification-Systems-01.png",
     },
     {
-      title: "System Selection",
-      desc: "Select the right water softening system for your needs, whether a compact home unit or industrial water softene",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Water-Softening-02.png",
+      title: "Expert Installation Process",
+      desc: "Our skilled technicians ensure proper installation of the custom purification system for seamless integration and reliable performance",
+      icon: "/Custom-Purification-Systems-02.png",
     },
     {
-      title: "Professional Installation",
-      desc: "Our skilled technicians expertly install water softeners in Dubai, ensuring proper functionality and peak performance for your home",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Water-Softening-03.png",
+      title: "Rigorous System Testing",
+      desc: "Thorough testing is conducted to verify that your custom purification system operates efficiently and meets industry standards .",
+      icon: "/Custom-Purification-Systems-03.png",
     },
     {
-      title: "Routine Maintenance and Support",
-      desc: "We create a service plan for system efficiency, offering maintenance and support, including regular checks on water softener salt levels",
-      icon: "https://waterengineering.ae/wp-content/uploads/2024/09/Custom-Purification-Systems-04.png",
+      title: "Continuous Maintenance Support",
+      desc: "We provide ongoing maintenance services to keep your custom purification system running smoothly for long-lasting results",
+      icon: "/Custom-Purification-Systems-04.png",
     },
   ]
   return (
     <>
         <Header />
-        <HeroSection title={"Water Softening"} description={"Dealing with hard water issues at home? Water Engineering.ae brings the perfect water softening solution that will assist in removing the mineral buildup and improve water quality. Our advanced water softening system removes the hard minerals that cause buildup in your pipes and appliances. Selecting the right water softener for home use can be quite difficult; that’s why our experts are here to guide you through the whole process. Water Engineering.ae provides you with the most appropriate and best water softening system solutions."} imgUrl={"../assets/Images/WaterSoftening-BG-Image-scaled.jpg"}/>
+  <HeroSection title={"Water Softening"} description={"Dealing with hard water issues at home? Water Engineering.ae brings the perfect water softening solution that will assist in removing the mineral buildup and improve water quality. Our advanced water softening system removes the hard minerals that cause buildup in your pipes and appliances. Selecting the right water softener for home use can be quite difficult; that’s why our experts are here to guide you through the whole process. Water Engineering.ae provides you with the most appropriate and best water softening system solutions."} imgUrl={"/Industrial-Water-Softener-1024x683.jpg"}/>
         <SecondSection title={"Why Water Softening Matters: Protecting Your Home and Your Health"} desc={"This process removes chemicals like calcium and magnesium, which cause buildup in pipes, appliances, and even on the skin. The water softening system replaces hard minerals with softer ones like sodium, potassium, and magnesium, creating water that’s safe for your home. A water softener for hard water works well with soaps and detergents, helping you save money while achieving better results. Whether you need a home or industrial water softening system, we have the solution for you. Contact us today to find out how we can improve your water quality!"}/>
         <ThirdSection text1={"Transform Your Water: Easy and Effective Softening Systems"} dec1={"We supply a high-quality water softening system for hard water issues in residential and commercial locations. Our systems remove aluminum or iron and replace them with sodium or potassium, creating soft water that’s safe and comfortable for bathing."} dec2={"Our modern automatic water softener systems work well in all conditions and last long. We offer easy-to-use installation products for maintenance, ensuring you enjoy water softener. Whether for your home or business, we have the right system for you."} dec3={"In addition to our premium systems, we provide water softening services and maintenance. As your local water softener company, we help you choose the right system, ensuring your water is cleaner and softer. We also offer water repair services."}/>
         <FourthSection />

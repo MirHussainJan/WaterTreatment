@@ -12,6 +12,17 @@ import Desalination from "./OtherPages/Desalination";
 import ReverseOsmosis from "./OtherPages/ReverseOsmosis";
 import Deionization from "./OtherPages/Deionization";
 import WaterIonization from "./OtherPages/WaterIonization";
+import SterilizationWaterTreatmentSystems from "./OtherPages/SterilizationWaterTreatmentSystems";
+import UltravoiletDisinfection from "./OtherPages/UltravoiletDisinfection";
+import IonExchange from "./OtherPages/IonExchange";
+import ActivatedCarbonFiltration from "./OtherPages/ActivatedCarbonFiltration";
+import Sedimentation from "./OtherPages/Sedimentation";
+import CopperSilverIonization from "./OtherPages/CopperSilverIonization";
+import MembraneCleaningSystems from "./OtherPages/MembraneCleaningSystems";
+import MediaFilters from "./OtherPages/MediaFilters";
+import WaterChillers from "./OtherPages/WaterChillers";
+import SelfCleaningFiltration from "./OtherPages/SelfCleaningFiltration";
+import CartridgeFilterHousings from "./OtherPages/CartridgeFilterHousings";
 
 const App = () => {
   return (
@@ -26,6 +37,17 @@ const App = () => {
         <Route path="/technologies/reverse-osmosis" element={<ReverseOsmosis />} />
         <Route path='/technologies/deionization' element={<Deionization/>}></Route>
         <Route path='/technologies/water-ionization' element={<WaterIonization/>}></Route>
+    <Route path='/technologies/sterilization-water-treatment-systems' element={<SterilizationWaterTreatmentSystems />} />
+    <Route path='/technologies/ultravoilet-disinfection' element={<UltravoiletDisinfection />} />
+    <Route path='/technologies/ion-exchange' element={<IonExchange />} />
+    <Route path='/technologies/activated-carbon-filtration' element={<ActivatedCarbonFiltration />} />
+    <Route path='/technologies/sedimentation' element={<Sedimentation />} />
+    <Route path='/technologies/copper-silver-ionization' element={<CopperSilverIonization />} />
+    <Route path='/technologies/membrane-cleaning-systems' element={<MembraneCleaningSystems />} />
+    <Route path='/technologies/media-filters' element={<MediaFilters />} />
+    <Route path='/technologies/water-chillers' element={<WaterChillers />} />
+    <Route path='/technologies/self-cleaning-filtration' element={<SelfCleaningFiltration />} />
+    <Route path='/technologies/cartridge-filter-housings' element={<CartridgeFilterHousings />} />
         
         <Route path='/industries' element={<Industries />}></Route>
         <Route path='/blogs' element={<Blogs />}></Route>

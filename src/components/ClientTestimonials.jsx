@@ -1,4 +1,3 @@
-import { Card, CardContent } from "./ui/Card"
 import Carousel from "./ui/Carousel2"
 
 export default function Clients() {
@@ -26,12 +25,12 @@ export default function Clients() {
   return (
     <>
       {/* Client Logos */}
-      <section className="w-ful  bg-[url(https://waterengineering.ae/wp-content/uploads/2024/09/bg_3.jpg)] bg-cover bg-center">
+      <section className="w-ful  bg-[url(bg_3.jpg)] bg-cover bg-center">
         <main className="w-full h-full bg-blue-900/82 py-15">
           <div className=" mx-auto px-4">
             <div className="text-center">
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 titles">Our Clients</h2>
-              <Carousel/>
+              <Carousel />
             </div>
           </div>
         </main>

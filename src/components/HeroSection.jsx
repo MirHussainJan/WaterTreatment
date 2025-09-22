@@ -21,8 +21,7 @@ const slides = [
     description:
       "At INNOVATORS, we revolutionize water treatment with cost-effective solutions. Based in Dubai Investment Park 2, UAE, we lead the MENA region in advanced water treatment. As an ISO 9001-2015 certified company and proud member of the World Water Quality Association, we deliver solutions and quality standards.",
     button: "Get In Touch",
-    image:
-      "https://waterengineering.ae/wp-content/uploads/2024/12/Home-Page-Banners-02-scaled.jpg",
+    image: "/Home-Page-Banners-02-scaled.jpg",
     to:"/contact"
   },
   {
