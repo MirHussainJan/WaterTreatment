@@ -1,5 +1,8 @@
  import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Blog1 from "./pages/Blog1";
+import Blog2 from "./pages/Blog2";
+import Blog3 from "./pages/Blog3";
 import Technologies from "./pages/Technologies";
 import About from "./pages/About";
 import Industries from "./pages/Industries";
@@ -50,7 +53,10 @@ const App = () => {
     <Route path='/technologies/cartridge-filter-housings' element={<CartridgeFilterHousings />} />
         
         <Route path='/industries' element={<Industries />}></Route>
-        <Route path='/blogs' element={<Blogs />}></Route>
+  <Route path='/blogs' element={<Blogs />}></Route>
+  <Route path='/blog1' element={<Blog1 />} />
+  <Route path='/blog2' element={<Blog2 />} />
+  <Route path='/blog3' element={<Blog3 />} />
         <Route path='/parts' element={<Parts />}></Route>
         <Route path='/contact' element={<ContactUs />}></Route>
       </Routes>
