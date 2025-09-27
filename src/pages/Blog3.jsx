@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SubHero from "../components/ui/SubHero";
 
+import FrequentlyAskedQuestion from "../OtherPages/Ui/FrequentlyAskedQuestion";
+
 export default function Blog3() {
   return (
     <>
@@ -10,7 +12,7 @@ export default function Blog3() {
       <section className="max-w-[1140px] mx-auto py-12 px-4">
         {/* Introduction Section */}
         <h2 className="text-2xl font-bold mb-4 text-[#01008c]">Whole Home Water Filtration System: Pure Water Everywhere</h2>
-        <img src="/public/img6.png" alt="Generic Home Filtration" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
+        <img src="/img6.png" alt="Generic Home Filtration" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
         <p className="text-gray-700 mb-8">A whole home water filtration system ensures that every tap in your house delivers clean, filtered water. This not only improves your health but also protects your appliances and plumbing from contaminants and scale buildup. In this guide, we’ll cover the features, installation, maintenance, and benefits of whole home filtration systems.</p>
 
         {/* Features Table Section */}
@@ -37,14 +39,14 @@ export default function Blog3() {
         {/* Installation Section */}
         <div className="mb-12">
           <h3 className="text-xl font-semibold mb-2 text-[#01008c]">Installation Process</h3>
-          <div className="flex flex-col md:flex-row gap-8">
-            <img src="/public/img4.png" alt="Installation" className="rounded-xl w-full md:w-1/2 mb-4 md:mb-0" />
+          <div className="flex flex-col items-center md:flex-row gap-8">
+            <img src="/Img4.png" alt="Installation" className="rounded-xl w-full md:w-1/2 mb-4 md:mb-0" />
             <div>
-              <ol className="list-decimal pl-6 text-gray-700">
-                <li>Assessment of water quality and needs.</li>
-                <li>Selection of appropriate filtration system.</li>
-                <li>Professional installation at main water line.</li>
-                <li>Testing and system demonstration.</li>
+              <ol className="list-decimal space-y-3 md:space-y-6 pl-6 text-gray-700">
+                <li className="md:text-xl">Assessment of water quality and needs.</li>
+                <li className="md:text-xl">Selection of appropriate filtration system.</li>
+                <li className="md:text-xl">Professional installation at main water line.</li>
+                <li className="md:text-xl">Testing and system demonstration.</li>
               </ol>
             </div>
           </div>
@@ -53,7 +55,7 @@ export default function Blog3() {
         {/* Maintenance Section */}
         <div className="mb-12">
           <h3 className="text-xl font-semibold mb-2 text-[#01008c]">Maintenance Tips</h3>
-          <img src="/public/img3.png" alt="Maintenance" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
+          <img src="/img3.png" alt="Maintenance" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
           <ul className="list-disc pl-6 text-gray-700">
             <li>Change filters as recommended by the manufacturer.</li>
             <li>Inspect system for leaks and wear every 6 months.</li>
@@ -63,21 +65,33 @@ export default function Blog3() {
         </div>
 
         {/* Frequently Asked Questions Section */}
-        <div className="mb-12">
-          <h3 className="text-xl font-semibold mb-2 text-[#01008c]">Frequently Asked Questions</h3>
-          <ul className="list-decimal pl-6 text-gray-700 mb-8">
-            <li><strong>How often do I change filters?</strong> Most systems require filter changes every 6-12 months.</li>
-            <li><strong>Will it remove all contaminants?</strong> It removes most common contaminants, but check system specs for details.</li>
-            <li><strong>Is installation disruptive?</strong> Professional installation is quick and minimally invasive.</li>
-            <li><strong>Can I install a system myself?</strong> Some systems are DIY-friendly, but professional installation is recommended for best results.</li>
-            <li><strong>Does it improve water taste?</strong> Yes, most users notice a significant improvement in taste and odor.</li>
-          </ul>
-        </div>
+        <FrequentlyAskedQuestion faq={[
+          {
+            question: "How often do I change filters?",
+            answer: "Most systems require filter changes every 6-12 months."
+          },
+          {
+            question: "Will it remove all contaminants?",
+            answer: "It removes most common contaminants, but check system specs for details."
+          },
+          {
+            question: "Is installation disruptive?",
+            answer: "Professional installation is quick and minimally invasive."
+          },
+          {
+            question: "Can I install a system myself?",
+            answer: "Some systems are DIY-friendly, but professional installation is recommended for best results."
+          },
+          {
+            question: "Does it improve water taste?",
+            answer: "Yes, most users notice a significant improvement in taste and odor."
+          }
+        ]} />
 
         {/* Conclusion Section */}
         <div className="mb-12">
           <h3 className="text-xl font-semibold mb-2 text-[#01008c]">Conclusion</h3>
-          <img src="/public/img6.png" alt="Clean Water" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
+          <img src="/img6.png" alt="Clean Water" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
           <p className="text-gray-700">Investing in a whole home filtration system is a step towards a healthier lifestyle and a more efficient household. Enjoy pure water everywhere, every day!</p>
         </div>
       </section>

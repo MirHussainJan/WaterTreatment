@@ -2,6 +2,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SubHero from "../components/ui/SubHero";
 
+import FrequentlyAskedQuestion from "../OtherPages/Ui/FrequentlyAskedQuestion";
+
 export default function Blog1() {
   return (
     <>
@@ -10,7 +12,7 @@ export default function Blog1() {
       <section className="max-w-[1140px] mx-auto py-12 px-4">
         {/* Introduction Section */}
         <h2 className="text-2xl font-bold mb-4 text-[#01008c]">Top 10 Benefits of Using Water Softeners for Your Home</h2>
-        <img src="/public/img6.png" alt="Clean Water" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
+        <img src="/img6.png" alt="Clean Water" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
         <p className="text-gray-700 mb-8">Hard water can cause a range of problems in your home, from scale buildup in pipes to dry skin and dull laundry. Water softeners are designed to solve these issues, providing you with cleaner, softer water for everyday use. In this comprehensive guide, we’ll explore the many benefits of water softeners, how they work, and tips for choosing and maintaining the right system for your household.</p>
 
         {/* Benefits Table Section */}
@@ -42,7 +44,7 @@ export default function Blog1() {
         <div className="mb-12">
           <h3 className="text-xl font-semibold mb-2 text-[#01008c]">How Do Water Softeners Work?</h3>
           <div className="flex flex-col md:flex-row gap-8">
-            <img src="/public/img5.png" alt="Water Softener Process" className="rounded-xl w-full md:w-1/2 mb-4 md:mb-0" />
+            <img src="/img5.png" alt="Water Softener Process" className="rounded-xl w-full md:w-1/2 mb-4 md:mb-0" />
             <div>
               <p className="text-gray-700 mb-2">Water softeners use ion exchange to replace calcium and magnesium ions with sodium or potassium ions. This process removes hardness from the water, making it soft and suitable for household use.</p>
               <ul className="list-disc pl-6 text-gray-700">
@@ -58,7 +60,7 @@ export default function Blog1() {
         {/* Choosing the Right System Section */}
         <div className="mb-12">
           <h3 className="text-xl font-semibold mb-2 text-[#01008c]">Choosing the Right Water Softener</h3>
-          <img src="/public/img4.png" alt="Choosing Water Softener" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
+          <img src="/img4.png" alt="Choosing Water Softener" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
           <p className="text-gray-700 mb-2">There are several types of water softeners available, including salt-based, salt-free, dual-tank, and magnetic systems. Consider your household size, water usage, and budget when selecting a system. Consult with a water treatment professional for personalized recommendations.</p>
           <ul className="list-disc pl-6 text-gray-700">
             <li>Salt-based systems are most effective for hard water.</li>
@@ -71,7 +73,7 @@ export default function Blog1() {
         {/* Maintenance Tips Section */}
         <div className="mb-12">
           <h3 className="text-xl font-semibold mb-2 text-[#01008c]">Maintenance Tips</h3>
-          <img src="/public/img3.png" alt="Maintenance" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
+          <img src="/img3.png" alt="Maintenance" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
           <ul className="list-disc pl-6 text-gray-700">
             <li>Check salt levels monthly and refill as needed.</li>
             <li>Clean the brine tank annually.</li>
@@ -81,21 +83,33 @@ export default function Blog1() {
         </div>
 
         {/* Frequently Asked Questions Section */}
-        <div className="mb-12">
-          <h3 className="text-xl font-semibold mb-2 text-[#01008c]">Frequently Asked Questions</h3>
-          <ul className="list-decimal pl-6 text-gray-700 mb-8">
-            <li><strong>Is soft water safe to drink?</strong> Yes, soft water is safe for most people, but those on low-sodium diets should consult a doctor.</li>
-            <li><strong>How often should I maintain my softener?</strong> Regular maintenance every 3-6 months is recommended for optimal performance.</li>
-            <li><strong>Can I install a softener myself?</strong> Many systems are DIY-friendly, but professional installation ensures best results.</li>
-            <li><strong>Does a water softener remove all contaminants?</strong> No, it only removes hardness minerals. Use a filtration system for other contaminants.</li>
-            <li><strong>Will soft water help my skin and hair?</strong> Yes, soft water is gentler and can reduce dryness and irritation.</li>
-          </ul>
-        </div>
+        <FrequentlyAskedQuestion faq={[
+          {
+            question: "Is soft water safe to drink?",
+            answer: "Yes, soft water is safe for most people, but those on low-sodium diets should consult a doctor."
+          },
+          {
+            question: "How often should I maintain my softener?",
+            answer: "Regular maintenance every 3-6 months is recommended for optimal performance."
+          },
+          {
+            question: "Can I install a softener myself?",
+            answer: "Many systems are DIY-friendly, but professional installation ensures best results."
+          },
+          {
+            question: "Does a water softener remove all contaminants?",
+            answer: "No, it only removes hardness minerals. Use a filtration system for other contaminants."
+          },
+          {
+            question: "Will soft water help my skin and hair?",
+            answer: "Yes, soft water is gentler and can reduce dryness and irritation."
+          }
+        ]} />
 
         {/* Conclusion Section */}
         <div className="mb-12">
           <h3 className="text-xl font-semibold mb-2 text-[#01008c]">Conclusion</h3>
-          <img src="/public/img1.png" alt="Happy Family with Clean Water" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
+          <img src="/img1.png" alt="Happy Family with Clean Water" className="rounded-xl w-full max-w-lg mb-6 mx-auto" />
           <p className="text-gray-700">Switching to a water softener is a smart investment for your home, ensuring better water quality and long-term savings. Enjoy the benefits of soft water in every aspect of your daily life!</p>
         </div>
       </section>
