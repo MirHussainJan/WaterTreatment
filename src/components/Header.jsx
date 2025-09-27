@@ -21,7 +21,7 @@ export default function Header() {
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
   { name: "Technologies", href: "/technologies", icon: <ChevronDown size={16} /> },
-  { name: "Industries", href: "/industries", icon: <ChevronDown size={16} /> },
+  { name: "Industries", href: "/industries" },
   { name: "Blogs", href: "/blogs" },
   { name: "Parts", href: "/parts" },
   { name: "Contact Us", href: "/contact" },
