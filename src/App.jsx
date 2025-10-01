@@ -1,4 +1,5 @@
- import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Blog1 from "./pages/Blog1";
 import Blog2 from "./pages/Blog2";
@@ -26,39 +27,61 @@ import MediaFilters from "./OtherPages/MediaFilters";
 import WaterChillers from "./OtherPages/WaterChillers";
 import SelfCleaningFiltration from "./OtherPages/SelfCleaningFiltration";
 import CartridgeFilterHousings from "./OtherPages/CartridgeFilterHousings";
+import Loader from "./components/ui/Loader";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Wait for all images and resources to load
+    const handleLoad = () => {
+      setLoading(false);
+    };
+
+    if (document.readyState === "complete") {
+      // already loaded
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+      return () => window.removeEventListener("load", handleLoad);
+    }
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/about' element={<About />}></Route>
-        <Route path='/technologies' element={<Technologies />}></Route>
-        <Route path='/technologies/water-purification' element={<WaterPurificationTechnologies />}></Route>
-        <Route path='/technologies/water-softening' element={<WaterSoftening />} ></Route>
-        <Route path="/technologies/Desalination" element={<Desalination />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/technologies" element={<Technologies />} />
+        <Route path="/technologies/water-purification" element={<WaterPurificationTechnologies />} />
+        <Route path="/technologies/water-softening" element={<WaterSoftening />} />
+        <Route path="/technologies/desalination" element={<Desalination />} />
         <Route path="/technologies/reverse-osmosis" element={<ReverseOsmosis />} />
-        <Route path='/technologies/deionization' element={<Deionization/>}></Route>
-        <Route path='/technologies/water-ionization' element={<WaterIonization/>}></Route>
-    <Route path='/technologies/sterilization-water-treatment-systems' element={<SterilizationWaterTreatmentSystems />} />
-    <Route path='/technologies/ultravoilet-disinfection' element={<UltravoiletDisinfection />} />
-    <Route path='/technologies/ion-exchange' element={<IonExchange />} />
-    <Route path='/technologies/activated-carbon-filtration' element={<ActivatedCarbonFiltration />} />
-    <Route path='/technologies/sedimentation' element={<Sedimentation />} />
-    <Route path='/technologies/copper-silver-ionization' element={<CopperSilverIonization />} />
-    <Route path='/technologies/membrane-cleaning-systems' element={<MembraneCleaningSystems />} />
-    <Route path='/technologies/media-filters' element={<MediaFilters />} />
-    <Route path='/technologies/water-chillers' element={<WaterChillers />} />
-    <Route path='/technologies/self-cleaning-filtration' element={<SelfCleaningFiltration />} />
-    <Route path='/technologies/cartridge-filter-housings' element={<CartridgeFilterHousings />} />
-        
-        <Route path='/industries' element={<Industries />}></Route>
-  <Route path='/blogs' element={<Blogs />}></Route>
-  <Route path='/blog1' element={<Blog1 />} />
-  <Route path='/blog2' element={<Blog2 />} />
-  <Route path='/blog3' element={<Blog3 />} />
-        <Route path='/parts' element={<Parts />}></Route>
-        <Route path='/contact' element={<ContactUs />}></Route>
+        <Route path="/technologies/deionization" element={<Deionization />} />
+        <Route path="/technologies/water-ionization" element={<WaterIonization />} />
+        <Route path="/technologies/sterilization-water-treatment-systems" element={<SterilizationWaterTreatmentSystems />} />
+        <Route path="/technologies/ultravoilet-disinfection" element={<UltravoiletDisinfection />} />
+        <Route path="/technologies/ion-exchange" element={<IonExchange />} />
+        <Route path="/technologies/activated-carbon-filtration" element={<ActivatedCarbonFiltration />} />
+        <Route path="/technologies/sedimentation" element={<Sedimentation />} />
+        <Route path="/technologies/copper-silver-ionization" element={<CopperSilverIonization />} />
+        <Route path="/technologies/membrane-cleaning-systems" element={<MembraneCleaningSystems />} />
+        <Route path="/technologies/media-filters" element={<MediaFilters />} />
+        <Route path="/technologies/water-chillers" element={<WaterChillers />} />
+        <Route path="/technologies/self-cleaning-filtration" element={<SelfCleaningFiltration />} />
+        <Route path="/technologies/cartridge-filter-housings" element={<CartridgeFilterHousings />} />
+
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog1" element={<Blog1 />} />
+        <Route path="/blog2" element={<Blog2 />} />
+        <Route path="/blog3" element={<Blog3 />} />
+        <Route path="/parts" element={<Parts />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
   );
