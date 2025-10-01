@@ -33,18 +33,35 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Wait for all images and resources to load
-    const handleLoad = () => {
+    const images = Array.from(document.images); // get all images in DOM
+    if (images.length === 0) {
       setLoading(false);
+      return;
+    }
+
+    let loadedCount = 0;
+    const handleImageLoad = () => {
+      loadedCount++;
+      if (loadedCount === images.length) {
+        setLoading(false);
+      }
     };
 
-    if (document.readyState === "complete") {
-      // already loaded
-      handleLoad();
-    } else {
-      window.addEventListener("load", handleLoad);
-      return () => window.removeEventListener("load", handleLoad);
-    }
+    images.forEach((img) => {
+      if (img.complete) {
+        handleImageLoad();
+      } else {
+        img.addEventListener("load", handleImageLoad);
+        img.addEventListener("error", handleImageLoad); // count failed loads too
+      }
+    });
+
+    return () => {
+      images.forEach((img) => {
+        img.removeEventListener("load", handleImageLoad);
+        img.removeEventListener("error", handleImageLoad);
+      });
+    };
   }, []);
 
   if (loading) {
@@ -57,23 +74,59 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/technologies" element={<Technologies />} />
-        <Route path="/technologies/water-purification" element={<WaterPurificationTechnologies />} />
-        <Route path="/technologies/water-softening" element={<WaterSoftening />} />
+        <Route
+          path="/technologies/water-purification"
+          element={<WaterPurificationTechnologies />}
+        />
+        <Route
+          path="/technologies/water-softening"
+          element={<WaterSoftening />}
+        />
         <Route path="/technologies/desalination" element={<Desalination />} />
-        <Route path="/technologies/reverse-osmosis" element={<ReverseOsmosis />} />
+        <Route
+          path="/technologies/reverse-osmosis"
+          element={<ReverseOsmosis />}
+        />
         <Route path="/technologies/deionization" element={<Deionization />} />
-        <Route path="/technologies/water-ionization" element={<WaterIonization />} />
-        <Route path="/technologies/sterilization-water-treatment-systems" element={<SterilizationWaterTreatmentSystems />} />
-        <Route path="/technologies/ultravoilet-disinfection" element={<UltravoiletDisinfection />} />
+        <Route
+          path="/technologies/water-ionization"
+          element={<WaterIonization />}
+        />
+        <Route
+          path="/technologies/sterilization-water-treatment-systems"
+          element={<SterilizationWaterTreatmentSystems />}
+        />
+        <Route
+          path="/technologies/ultravoilet-disinfection"
+          element={<UltravoiletDisinfection />}
+        />
         <Route path="/technologies/ion-exchange" element={<IonExchange />} />
-        <Route path="/technologies/activated-carbon-filtration" element={<ActivatedCarbonFiltration />} />
-        <Route path="/technologies/sedimentation" element={<Sedimentation />} />
-        <Route path="/technologies/copper-silver-ionization" element={<CopperSilverIonization />} />
-        <Route path="/technologies/membrane-cleaning-systems" element={<MembraneCleaningSystems />} />
+        <Route
+          path="/technologies/activated-carbon-filtration"
+          element={<ActivatedCarbonFiltration />}
+        />
+        <Route
+          path="/technologies/sedimentation"
+          element={<Sedimentation />}
+        />
+        <Route
+          path="/technologies/copper-silver-ionization"
+          element={<CopperSilverIonization />}
+        />
+        <Route
+          path="/technologies/membrane-cleaning-systems"
+          element={<MembraneCleaningSystems />}
+        />
         <Route path="/technologies/media-filters" element={<MediaFilters />} />
         <Route path="/technologies/water-chillers" element={<WaterChillers />} />
-        <Route path="/technologies/self-cleaning-filtration" element={<SelfCleaningFiltration />} />
-        <Route path="/technologies/cartridge-filter-housings" element={<CartridgeFilterHousings />} />
+        <Route
+          path="/technologies/self-cleaning-filtration"
+          element={<SelfCleaningFiltration />}
+        />
+        <Route
+          path="/technologies/cartridge-filter-housings"
+          element={<CartridgeFilterHousings />}
+        />
 
         <Route path="/industries" element={<Industries />} />
         <Route path="/blogs" element={<Blogs />} />
