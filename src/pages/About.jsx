@@ -76,29 +76,29 @@ const About = () => {
         </main>
       </section>
       <section className="w-full  py-2 bg-[#ECF2F6] ">
-        <main className="max-w-[1140px] mx-auto py-4 rounded-2xl">
+        <main className="max-w-[1140px] mx-auto py-4 rounded-2xl ">
           <HeroCarousel />
         </main>
       </section>
       <section className="bg-[#ECF2F6] py-5">
-        <main className=" max-w-[1140px] mx-auto flex gap-4 pb-5">
-          <div className="w-[50%]">
+        <main className=" max-w-[1140px] mx-auto flex gap-4 pb-5 lg:flex-row flex-col-reverse px-5">
+          <div className="w-full md:w-[50%]">
             <div>
               <button className="bg-white text-[#01008c] px-4 py-2 rounded-full">
                 OUR PROCESS
               </button>
             </div>
             <div>
-              <p className="px-4 md:px-0 text-4xl md:text-[40px] text-[#01008c]  titles">
+              <p className=" md:px-0 text-4xl md:text-[40px] text-[#01008c]  titles">
                 Quality Water Solutions Guaranteed
               </p>
             </div>
-            <div className="text-zinc-600">
+            <div className="text-zinc-600 text-sm md:text-base">
               Pure water solutions, backed by our quality guarantee. We deliver
               excellence you can count on, every single time.
             </div>
             <div className="flex gap-6 pt-5">
-              <div className="flex gap-20 flex-col relative py-2">
+              <div className="flex  flex-col justify-between relative py-2">
                 <div className="w-12 relative h-12 rounded-full bg-[#01008c] text-white flex items-center justify-center font-black z-2">
                   <Check size={30} />
                 </div>
@@ -108,14 +108,14 @@ const About = () => {
                 <div className="w-12 relative h-12 rounded-full bg-[#01008c] text-white flex items-center justify-center font-black z-2">
                   <Check size={30} />
                 </div>
-                <div className="bg-[#01008c] w-[2px] left-1/2 h-[90%] absolute z-[1]"></div>
+                <div className="bg-[#01008c] w-[2px] left-1/2 min-h-[90%] my-auto absolute z-[1]"></div>
               </div>
               <div className="flex flex-col gap-13">
-                <div>
+                <div className="py-3 md:py-0">
                   <p className="font-bold text-[#01008c] text-xl">
                     Our Promise
                   </p>
-                  <p className="text-zinc-600">
+                  <p className="text-zinc-600 text-sm md:text-base">
                     Delivering excellence in every drop. Quality water solutions
                     you can trust.
                   </p>
@@ -124,14 +124,14 @@ const About = () => {
                   <p className="font-bold text-[#01008c] text-xl">
                     Our Mission
                   </p>
-                  <p className="text-zinc-600">
+                  <p className="text-zinc-600 text-sm md:text-base">
                     To provide innovative water solutions that transform
                     industries. Making pure water accessible to all.
                   </p>
                 </div>
                 <div>
                   <p className="font-bold text-[#01008c] text-xl">Our Vision</p>
-                  <p className="text-zinc-600">
+                  <p className="text-zinc-600 text-sm md:text-base">
                     To lead global water treatment innovation. Creating
                     sustainable solutions for a better tomorrow.
                   </p>
@@ -139,8 +139,8 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%]">
-            <div className="w-140 h-130 bg-[url(/Water-Desalination-Plants-UAE.jpg)] bg-cover rounded-2xl"></div>
+          <div className="w-full md:h-130 md:w-[50%] rounded-2xl overflow-hidden lg:my-2">
+              <img className="w-full h-full" src="/Water-Desalination-Plants-UAE.jpg" alt="" />  
           </div>
         </main>
       </section>

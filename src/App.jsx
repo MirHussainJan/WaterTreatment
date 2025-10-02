@@ -33,8 +33,9 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const images = Array.from(document.images); // get all images in DOM
-    if (images.length === 0) {
+    const imgs = Array.from(document.querySelectorAll("img"));
+
+    if (imgs.length === 0) {
       setLoading(false);
       return;
     }
@@ -42,22 +43,25 @@ const App = () => {
     let loadedCount = 0;
     const handleImageLoad = () => {
       loadedCount++;
-      if (loadedCount === images.length) {
-        setLoading(false);
+      if (loadedCount === imgs.length) {
+        // Ensure browser paints images before removing loader
+        requestAnimationFrame(() => {
+          setLoading(false);
+        });
       }
     };
 
-    images.forEach((img) => {
+    imgs.forEach((img) => {
       if (img.complete) {
-        handleImageLoad();
+        requestAnimationFrame(() => handleImageLoad());
       } else {
         img.addEventListener("load", handleImageLoad);
-        img.addEventListener("error", handleImageLoad); // count failed loads too
+        img.addEventListener("error", handleImageLoad);
       }
     });
 
     return () => {
-      images.forEach((img) => {
+      imgs.forEach((img) => {
         img.removeEventListener("load", handleImageLoad);
         img.removeEventListener("error", handleImageLoad);
       });
