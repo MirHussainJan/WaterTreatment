@@ -26,8 +26,8 @@ export default function QualityProducts() {
           <Carousel />   {/* use carousel here */}
         </div>
       </div>
-      <section className="w-full  relative md:px-50 mb-20 -mt-23">
-        <div className="mx-auto mt-10 bg-white shadow-[_0px_4px_12px_rgba(0,0,0,0.15)] rounded-lg md:p-6 p-3 max-w-[1140px]">
+      <section className="w-full relative md:px-4 mb-20 -mt-23">
+        <div className="mx-auto mt-10 bg-white shadow-[_0px_4px_12px_rgba(0,0,0,0.15)] rounded-2xl md:p-6 p-3 max-w-[1140px]">
           <div className="flex md:gap-5 flex-col md:flex-row md:items-center md:justify-center">
             <div className="md:w-[1000px] md:h-[300px]">
               <img src={img} alt="Quality control" className="rounded-lg shadow-lg w-full h-full" />

@@ -21,8 +21,27 @@ export default function Carousel() {
   const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [itemsPerView, setItemsPerView] = useState(5);
   const intervalRef = useRef();
-  const itemsPerView = 5; // Show 5 items at a time on desktop
+
+  // Update items per view based on screen size
+  useEffect(() => {
+    const updateItemsPerView = () => {
+      if (window.innerWidth < 640) {
+        setItemsPerView(1); // Mobile: 1 card
+      } else if (window.innerWidth < 768) {
+        setItemsPerView(2); // Small tablets: 2 cards
+      } else if (window.innerWidth < 1024) {
+        setItemsPerView(3); // Tablets: 3 cards
+      } else {
+        setItemsPerView(5); // Desktop: 5 cards
+      }
+    };
+
+    updateItemsPerView();
+    window.addEventListener('resize', updateItemsPerView);
+    return () => window.removeEventListener('resize', updateItemsPerView);
+  }, []);
 
   // Helper to clear and restart interval
   const restartInterval = () => {
@@ -70,7 +89,7 @@ export default function Carousel() {
   };
 
   return (
-    <div className="max-w-[1140px] mx-auto py-10 px-4">
+    <div className="max-w-[1140px] mx-auto py-10">
       <div
         className="relative overflow-hidden"
         onMouseEnter={() => clearInterval(intervalRef.current)}
@@ -89,7 +108,12 @@ export default function Carousel() {
             {[...images, ...images, ...images].map((item, index) => (
               <div
                 key={index}
-                className="w-1/5 flex-shrink-0 px-2 cursor-pointer group"
+                className={`flex-shrink-0 px-2 cursor-pointer group ${
+                  itemsPerView === 1 ? 'w-full' :
+                  itemsPerView === 2 ? 'w-1/2' :
+                  itemsPerView === 3 ? 'w-1/3' :
+                  'w-1/5'
+                }`}
                 onClick={handleProductClick}
               >
                 <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 hover:shadow-xl transition-all duration-300">
