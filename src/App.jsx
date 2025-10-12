@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Blog1 from "./pages/Blog1";
 import Blog2 from "./pages/Blog2";
@@ -29,117 +29,184 @@ import SelfCleaningFiltration from "./OtherPages/SelfCleaningFiltration";
 import CartridgeFilterHousings from "./OtherPages/CartridgeFilterHousings";
 import Loader from "./components/ui/Loader";
 
-const App = () => {
-  const [loading, setLoading] = useState(true);
+// Component to handle route changes and show loader
+const RouteChangeHandler = ({ children }) => {
+  const location = useLocation();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const imgs = Array.from(document.querySelectorAll("img"));
-
-    if (imgs.length === 0) {
-      setLoading(false);
-      return;
-    }
-
-    let loadedCount = 0;
-    const handleImageLoad = () => {
-      loadedCount++;
-      if (loadedCount === imgs.length) {
-        // Ensure browser paints images before removing loader
-        requestAnimationFrame(() => {
-          setLoading(false);
-        });
+    // Show loader when route changes
+    setLoading(true);
+    
+    // Scroll to top on route change
+    window.scrollTo(0, 0);
+    
+    // Wait for content to render and images to load
+    const timer = setTimeout(() => {
+      const imgs = Array.from(document.querySelectorAll("img"));
+      
+      if (imgs.length === 0) {
+        setLoading(false);
+        return;
       }
-    };
 
-    imgs.forEach((img) => {
-      if (img.complete) {
-        requestAnimationFrame(() => handleImageLoad());
-      } else {
-        img.addEventListener("load", handleImageLoad);
-        img.addEventListener("error", handleImageLoad);
-      }
-    });
+      let loadedCount = 0;
+      const handleImageLoad = () => {
+        loadedCount++;
+        if (loadedCount === imgs.length) {
+          requestAnimationFrame(() => {
+            setLoading(false);
+          });
+        }
+      };
 
-    return () => {
       imgs.forEach((img) => {
-        img.removeEventListener("load", handleImageLoad);
-        img.removeEventListener("error", handleImageLoad);
+        if (img.complete) {
+          handleImageLoad();
+        } else {
+          img.addEventListener("load", handleImageLoad);
+          img.addEventListener("error", handleImageLoad);
+        }
       });
-    };
+
+      // Cleanup if component unmounts
+      return () => {
+        imgs.forEach((img) => {
+          img.removeEventListener("load", handleImageLoad);
+          img.removeEventListener("error", handleImageLoad);
+        });
+      };
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [location.pathname]);
+
+  return (
+    <>
+      {loading && <Loader />}
+      {children}
+    </>
+  );
+};
+
+const App = () => {
+  const [initialLoading, setInitialLoading] = useState(true);
+
+  useEffect(() => {
+    // Initial page load - wait a bit for content to render
+    const timer = setTimeout(() => {
+      const imgs = Array.from(document.querySelectorAll("img"));
+
+      if (imgs.length === 0) {
+        setInitialLoading(false);
+        return;
+      }
+
+      let loadedCount = 0;
+      const handleImageLoad = () => {
+        loadedCount++;
+        if (loadedCount === imgs.length) {
+          // Ensure browser paints images before removing loader
+          requestAnimationFrame(() => {
+            setInitialLoading(false);
+          });
+        }
+      };
+
+      imgs.forEach((img) => {
+        if (img.complete) {
+          requestAnimationFrame(() => handleImageLoad());
+        } else {
+          img.addEventListener("load", handleImageLoad);
+          img.addEventListener("error", handleImageLoad);
+        }
+      });
+
+      return () => {
+        imgs.forEach((img) => {
+          img.removeEventListener("load", handleImageLoad);
+          img.removeEventListener("error", handleImageLoad);
+        });
+      };
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, []);
 
-  if (loading) {
+  if (initialLoading) {
     return <Loader />;
   }
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/technologies" element={<Technologies />} />
-        <Route
-          path="/technologies/water-purification"
-          element={<WaterPurificationTechnologies />}
-        />
-        <Route
-          path="/technologies/water-softening"
-          element={<WaterSoftening />}
-        />
-        <Route path="/technologies/desalination" element={<Desalination />} />
-        <Route
-          path="/technologies/reverse-osmosis"
-          element={<ReverseOsmosis />}
-        />
-        <Route path="/technologies/deionization" element={<Deionization />} />
-        <Route
-          path="/technologies/water-ionization"
-          element={<WaterIonization />}
-        />
-        <Route
-          path="/technologies/sterilization-water-treatment-systems"
-          element={<SterilizationWaterTreatmentSystems />}
-        />
-        <Route
-          path="/technologies/ultravoilet-disinfection"
-          element={<UltravoiletDisinfection />}
-        />
-        <Route path="/technologies/ion-exchange" element={<IonExchange />} />
-        <Route
-          path="/technologies/activated-carbon-filtration"
-          element={<ActivatedCarbonFiltration />}
-        />
-        <Route
-          path="/technologies/sedimentation"
-          element={<Sedimentation />}
-        />
-        <Route
-          path="/technologies/copper-silver-ionization"
-          element={<CopperSilverIonization />}
-        />
-        <Route
-          path="/technologies/membrane-cleaning-systems"
-          element={<MembraneCleaningSystems />}
-        />
-        <Route path="/technologies/media-filters" element={<MediaFilters />} />
-        <Route path="/technologies/water-chillers" element={<WaterChillers />} />
-        <Route
-          path="/technologies/self-cleaning-filtration"
-          element={<SelfCleaningFiltration />}
-        />
-        <Route
-          path="/technologies/cartridge-filter-housings"
-          element={<CartridgeFilterHousings />}
-        />
+      <RouteChangeHandler>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/technologies" element={<Technologies />} />
+          <Route
+            path="/technologies/water-purification"
+            element={<WaterPurificationTechnologies />}
+          />
+          <Route
+            path="/technologies/water-softening"
+            element={<WaterSoftening />}
+          />
+          <Route path="/technologies/desalination" element={<Desalination />} />
+          <Route
+            path="/technologies/reverse-osmosis"
+            element={<ReverseOsmosis />}
+          />
+          <Route path="/technologies/deionization" element={<Deionization />} />
+          <Route
+            path="/technologies/water-ionization"
+            element={<WaterIonization />}
+          />
+          <Route
+            path="/technologies/sterilization-water-treatment-systems"
+            element={<SterilizationWaterTreatmentSystems />}
+          />
+          <Route
+            path="/technologies/ultravoilet-disinfection"
+            element={<UltravoiletDisinfection />}
+          />
+          <Route path="/technologies/ion-exchange" element={<IonExchange />} />
+          <Route
+            path="/technologies/activated-carbon-filtration"
+            element={<ActivatedCarbonFiltration />}
+          />
+          <Route
+            path="/technologies/sedimentation"
+            element={<Sedimentation />}
+          />
+          <Route
+            path="/technologies/copper-silver-ionization"
+            element={<CopperSilverIonization />}
+          />
+          <Route
+            path="/technologies/membrane-cleaning-systems"
+            element={<MembraneCleaningSystems />}
+          />
+          <Route path="/technologies/media-filters" element={<MediaFilters />} />
+          <Route path="/technologies/water-chillers" element={<WaterChillers />} />
+          <Route
+            path="/technologies/self-cleaning-filtration"
+            element={<SelfCleaningFiltration />}
+          />
+          <Route
+            path="/technologies/cartridge-filter-housings"
+            element={<CartridgeFilterHousings />}
+          />
 
-        <Route path="/industries" element={<Industries />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blog1" element={<Blog1 />} />
-        <Route path="/blog2" element={<Blog2 />} />
-        <Route path="/blog3" element={<Blog3 />} />
-        <Route path="/parts" element={<Parts />} />
-        <Route path="/contact" element={<ContactUs />} />
-      </Routes>
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/blog1" element={<Blog1 />} />
+          <Route path="/blog2" element={<Blog2 />} />
+          <Route path="/blog3" element={<Blog3 />} />
+          <Route path="/parts" element={<Parts />} />
+          <Route path="/contact" element={<ContactUs />} />
+        </Routes>
+      </RouteChangeHandler>
     </BrowserRouter>
   );
 };
