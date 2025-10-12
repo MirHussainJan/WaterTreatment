@@ -64,7 +64,7 @@ const ContactUs = () => {
       <Header />
       <SubHero
         title="Contact Us"
-        desc="Let’s discuss your water treatment needs. Get in touch for pure water solutions. Our experts are ready to help you achieve optimal water quality."
+        desc="Let's discuss your water treatment needs with leading water purifier suppliers in UAE. Get in touch for pure RO water solutions, water softeners, and industrial water filters. Our experts in Dubai are ready to help you achieve optimal water quality."
         img="/Contact-US-Image-BG-scaled.jpg"
       />
 

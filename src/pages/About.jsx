@@ -13,7 +13,7 @@ const About = () => {
       <Header />
       <SubHero
         title="About Us"
-        desc="We believe every drop of water holds potential for excellence. For over two decades, we’ve turned this belief into reality, delivering pure water solutions that matter."
+        desc="Leading water purifier suppliers in UAE for over two decades. We deliver excellence in RO plants, water softeners, and industrial water treatment solutions across Dubai, Abu Dhabi, and Sharjah."
         img="About-us-1st-Image-scaled.jpg"
       />
       <section className="w-full  py-2 bg-[#ECF2F6] pt-15">
@@ -26,7 +26,7 @@ const About = () => {
             </div>
             <div>
               <p className="px-4 md:px-0 text-4xl md:text-[40px] text-[#01008c]  titles">
-                High Standard & Quality Services
+                High Standard Water Purification & Quality Services
               </p>
             </div>
             <div>
@@ -37,21 +37,20 @@ const About = () => {
                 <div className="">
                   <p className="text-zinc-700">
                     ince 1999, we've been more than just a water treatment
-                    company - we're problem solvers, innovators, and partners in
-                    progress. Through 350+ installations across 18 countries,
-                    we've consistently delivered solutions that
+                    company in Dubai - we're problem solvers, innovators, and partners in
+                    progress. Through 350+ installations of RO water purifiers, water softeners, and industrial ro plants across 18 countries,
+                    we've consistently delivered water filtration solutions that
                   </p>
                 </div>
               </div>
               <div>
                 <p className="text-zinc-700 px-4 md:px-0">
                   matter, earning the trust of over 5,000 customers worldwide.
-                  Based in the UAE, our expertise spans from simple filtration
-                  systems to complex industrial solutions. We bring together
-                  global technology standards with local expertise, ensuring
+                  Based in the UAE, our expertise spans from domestic water filters and whole house water softeners to complex industrial water treatment systems including reverse osmosis, ultra violet sterilization, and deionization plants. We bring together
+                  global technology standards with local expertise in Dubai, Abu Dhabi, Sharjah, and Ajman, ensuring
                   every drop of water meets the highest quality benchmarks. It's
-                  not just about treating water - it's about building lasting
-                  partnerships and creating sustainable solutions that stand the
+                  not just about water purification - it's about building lasting
+                  partnerships and creating sustainable water solutions that stand the
                   test of time.
                 </p>
               </div>
@@ -90,12 +89,12 @@ const About = () => {
             </div>
             <div>
               <p className=" md:px-0 text-4xl md:text-[40px] text-[#01008c]  titles">
-                Quality Water Solutions Guaranteed
+                Quality Water Treatment Solutions Guaranteed
               </p>
             </div>
             <div className="text-zinc-600 text-sm md:text-base">
-              Pure water solutions, backed by our quality guarantee. We deliver
-              excellence you can count on, every single time.
+              Pure water solutions through advanced RO plants, water filters, and water purifiers, backed by our quality guarantee. We deliver
+              excellence in water treatment you can count on, every single time across UAE.
             </div>
             <div className="flex gap-6 pt-5">
               <div className="flex  flex-col justify-between relative py-2">
@@ -116,8 +115,8 @@ const About = () => {
                     Our Promise
                   </p>
                   <p className="text-zinc-600 text-sm md:text-base">
-                    Delivering excellence in every drop. Quality water solutions
-                    you can trust.
+                    Delivering excellence in every drop with top-quality water purifiers in UAE. Industrial RO plants and water filters
+                    you can trust for homes and businesses.
                   </p>
                 </div>
                 <div>
@@ -125,15 +124,15 @@ const About = () => {
                     Our Mission
                   </p>
                   <p className="text-zinc-600 text-sm md:text-base">
-                    To provide innovative water solutions that transform
-                    industries. Making pure water accessible to all.
+                    To provide innovative water treatment solutions including reverse osmosis, water softeners, and ultra violet systems that transform
+                    industries. Making pure water accessible to all across Dubai, Abu Dhabi, and Sharjah.
                   </p>
                 </div>
                 <div>
                   <p className="font-bold text-[#01008c] text-xl">Our Vision</p>
                   <p className="text-zinc-600 text-sm md:text-base">
-                    To lead global water treatment innovation. Creating
-                    sustainable solutions for a better tomorrow.
+                    To lead global water purification innovation as best water filters company in UAE. Creating
+                    sustainable RO water purifier solutions for a better tomorrow.
                   </p>
                 </div>
               </div>

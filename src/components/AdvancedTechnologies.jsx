@@ -8,12 +8,12 @@ import img6 from "../assets/Imgs/Water-Ionization.png";
 import { Link } from "react-router-dom";
 export default function AdvancedTechnologies() {
   const technologies = [
+    { name: "Desalination", image: '/DEsalination-removebg-preview.png' },
+    { name: "Water Softening", image: img2 },
     {
-      name: "Custom Purification Systems",
+      name: "Containerized RO Plant",
       image: img1,
     },
-    { name: "Water Softening", image: img2 },
-    { name: "Desalination", image: img3 },
     { name: "Reverse Osmosis", image: img4 },
     { name: "Deionization", image: img5 },
     { name: "Water Ionization", image: img6 },
@@ -50,7 +50,7 @@ export default function AdvancedTechnologies() {
                 <img
                   src={tech.image || "/placeholder.svg"}
                   alt={tech.name}
-                  className="w-full object-cover rounded-lg scale-[1]"
+                  className="w-full object-cover rounded-lg scale-[1] h-72"
                 />
                 <h3 className="text-base font-bold text-[#01008c] py-6 transition-colors duration-300 group-hover:bg-[#01008c] group-hover:text-white rounded-b-2xl">
                   {tech.name}

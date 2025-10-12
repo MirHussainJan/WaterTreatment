@@ -18,7 +18,7 @@ export default function BlogSection() {
     {
       title: "Whole Home Water Filtration System: Pure Water Everywhere",
       desc: "Upgrade to a whole home water filtration system for filtered water at every tap, improving health, taste, and appliance longevity throughout your house.",
-      img: "/img3.png",
+      img: "/Whole.jpg",
       link: "/blog3"
     },
   ]

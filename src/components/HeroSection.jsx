@@ -10,7 +10,7 @@ const slides = [
     id: 1,
     title: "Setting New Standards",
     description:
-      "From expert consultation to ongoing maintenance, we deliver end-to-end water treatment excellence. Our comprehensive services include design, fabrication, installation, and dedicated maintenance support. Trust our state-of-the-art technology and expert team to provide sustainable solutions that ensure pure water while protecting our environment.",
+      "Leading water purifier suppliers in UAE offering RO plants, water softeners, and industrial water treatment solutions. Expert installation, maintenance, and service across Dubai, Abu Dhabi, Sharjah, and Ajman.",
     button: "Call Us",
     image: img1,
     to:"/contact"
@@ -19,16 +19,16 @@ const slides = [
     id: 2,
     title: "Innovators Water Treatment",
     description:
-      "At INNOVATORS, we revolutionize water treatment with cost-effective solutions. Based in Dubai Investment Park 2, UAE, we lead the MENA region in advanced water treatment. As an ISO 9001-2015 certified company and proud member of the World Water Quality Association, we deliver solutions and quality standards.",
+      "ISO 9001-2015 certified water purifier company in Dubai. Specializing in RO water purifiers, water filters, reverse osmosis systems, and custom water treatment solutions throughout the MENA region.",
     button: "Get In Touch",
     image: "/Home-Page-Banners-02-scaled.jpg",
     to:"/contact"
   },
   {
     id: 3,
-    title: "Setting New Standards",
+    title: "Complete Water Solutions",
     description:
-      "From expert consultation to ongoing maintenance, we deliver end-to-end water treatment excellence. Our comprehensive services include design, fabrication, installation, and dedicated maintenance support. Trust our state-of-the-art technology and expert team to provide sustainable solutions that ensure pure water while protecting our environment.",
+      "From domestic water filters to industrial RO plants in UAE. We provide water softeners, ultra violet systems, water chillers, and whole house water filters with dedicated AMC and maintenance support.",
     button: "Call Us",
     image: img3,
     to:"/contact"
@@ -37,90 +37,137 @@ const slides = [
 
 export default function HeroCarousel() {
   const [current, setCurrent] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const intervalRef = useRef();
 
   // Helper to clear and restart interval
   const restartInterval = () => {
     if (intervalRef.current) clearInterval(intervalRef.current);
     intervalRef.current = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 6000);
+      handleSlideChange((prev) => (prev + 1) % slides.length);
+    }, 5000);
+  };
+
+  const handleSlideChange = (nextIndex) => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    const index = typeof nextIndex === 'function' ? nextIndex(current) : nextIndex;
+    setCurrent(index);
+    setTimeout(() => setIsTransitioning(false), 700);
   };
 
   useEffect(() => {
     restartInterval();
     return () => clearInterval(intervalRef.current);
     // eslint-disable-next-line
-  }, []);
+  }, [current]);
 
   // When user interacts, reset interval
   const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % slides.length);
+    handleSlideChange((prev) => (prev + 1) % slides.length);
     restartInterval();
   };
   const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+    handleSlideChange((prev) => (prev - 1 + slides.length) % slides.length);
     restartInterval();
   };
   const goToSlide = (index) => {
-    setCurrent(index);
-    restartInterval();
+    if (index !== current) {
+      handleSlideChange(index);
+      restartInterval();
+    }
   };
 
   return (
-    <section className="relative h-[60vh] overflow-hidden">
-      {slides.map((slide, index) => (
-        <div
-          key={slide.id}
-          className={`absolute inset-0 transition-opacity duration-3000 ${
-            index === current ? "opacity-100" : "opacity-0"
-          }`}
-        >
+    <section className="relative h-[70vh] overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800">
+      {/* Slides Container */}
+      <div 
+        className="flex h-full transition-transform duration-700 ease-in-out"
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {slides.map((slide, index) => (
           <div
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${slide.image})` }}
-          />
-          <div className="absolute inset-0 bg-black/50" />
-          <div className="relative container mx-auto px-4 h-full flex items-center justify-center text-center">
-            <div className="max-w-7xl text-white">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 titles">
-                {slide.title}
-              </h1>
-              <p className="text-sm px-8 md:text-lg mb-6 text-white">
-                {slide.description}
-              </p>
-              <Link to={slide.to} className="cursor-pointer hover:brightness-90 text-white px-8 py-3 rounded-md font-semibold bg-black bg-linear-to-b from-[#01008C] to-[#09529fd9]">
-                {slide.button}
-              </Link>
+            key={slide.id}
+            className="min-w-full h-full relative"
+          >
+            {/* Background Image with Ken Burns effect */}
+            <div
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-[5000ms] ease-out"
+              style={{ 
+                backgroundImage: `url(${slide.image})`,
+                transform: index === current ? 'scale(1.05)' : 'scale(1)'
+              }}
+            />
+            
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60" />
+            
+            {/* Content */}
+            <div className="relative container mx-auto px-6 md:px-12 h-full flex items-center justify-center">
+              <div 
+                className={`text-white text-center transition-all duration-1000 ${
+                  index === current 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-8'
+                }`}
+                style={{ transitionDelay: index === current ? '300ms' : '0ms' }}
+              >
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                  {slide.title}
+                </h1>
+                <p className="text-base md:text-lg mb-8 leading-relaxed text-gray-200 max-w-4xl mx-auto">
+                  {slide.description}
+                </p>
+                <Link 
+                  to={slide.to} 
+                  className="bg-[linear-gradient(180deg,#01008c_0%,#063977_100%)] hover:-translate-y-2.5 transition duration-400 cursor-pointer py-4 px-8 font-semibold rounded-sm text-sm text-white"
+                >
+                  {slide.button}
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
-      {/* Arrows */}
+      {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 text-white p-2 rounded-full bg-gray-500/50"
+        disabled={isTransitioning}
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white p-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed group"
+        aria-label="Previous slide"
       >
-        <ChevronLeft className="md:w-9 w-5 h-5 md:h-9 " />
+        <ChevronLeft className="w-6 h-6 md:w-8 md:h-8 group-hover:-translate-x-1 transition-transform duration-300" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 text-white p-2 rounded-full bg-gray-500/50"
+        disabled={isTransitioning}
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white p-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed group"
+        aria-label="Next slide"
       >
-        <ChevronRight className="md:w-9 w-5 h-5 md:h-9 " />
+        <ChevronRight className="w-6 h-6 md:w-8 md:h-8 group-hover:translate-x-1 transition-transform duration-300" />
       </button>
 
-      {/* Dots */}
-      <div className="absolute bottom-6 w-full flex justify-center space-x-2">
+      {/* Pagination Dots */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => goToSlide(index)}
-            className={`w-2 h-2 rounded-full ${
-              index === current ? "bg-blue-900" : "bg-white"
+            disabled={isTransitioning}
+            className={`group relative transition-all duration-300 disabled:cursor-not-allowed ${
+              index === current ? 'w-12' : 'w-3'
             }`}
-          />
+            aria-label={`Go to slide ${index + 1}`}
+          >
+            <div 
+              className={`h-3 rounded-full transition-all duration-300 ${
+                index === current 
+                  ? 'bg-white shadow-lg' 
+                  : 'bg-white/40 hover:bg-white/60'
+              }`}
+            />
+          </button>
         ))}
       </div>
     </section>

@@ -43,7 +43,7 @@ export default function Desalination() {
       <HeroSection
         title={"Desalination"}
         description={
-          "Desalination is the process of turning seawater, saltwater into fresh, drinkable water. At Water Engineering.ae, we offer the best seawater desalination systems for various purposes across the world. Our desalination systems are designed to optimize the water desalination process, keeping desalination plant costs in check. We also provide expert support and maintenance, ensuring long-lasting, efficient operation. Let us help you achieve reliable, sustainable solutions with top-quality technology Personalized to your needs."
+          "Desalination is the process of turning seawater, saltwater into fresh, drinkable water. At Innovators, we offer the best seawater desalination systems for various purposes across the world. Our desalination systems are designed to optimize the water desalination process, keeping desalination plant costs in check. We also provide expert support and maintenance, ensuring long-lasting, efficient operation. Let us help you achieve reliable, sustainable solutions with top-quality technology Personalized to your needs."
         }
         imgUrl={"/Water-Desalination-Plants-UAE.jpg"}
       />
@@ -52,7 +52,7 @@ export default function Desalination() {
           "Desalination Revolutions : Turning Sea and Brackish Water into Freshwater"
         }
         desc={
-          "Desalination means to remove the unwanted materials from the water and to make the water for use. For water purification, we offer innovative technology at Water Engineering.ae, for the purification of sea and brackish water. This list includes desalination machines, industrial desalination systems and commercial desalination systems. For industrial use or commercial local use, our systems enable high quality output in water desalination while putting into consideration low costs of operation. Reach out to us today to explore our desalination systems!"
+          "Desalination means to remove the unwanted materials from the water and to make the water for use. For water purification, we offer innovative technology at Innovators, for the purification of sea and brackish water. This list includes desalination machines, industrial desalination systems and commercial desalination systems. For industrial use or commercial local use, our systems enable high quality output in water desalination while putting into consideration low costs of operation. Reach out to us today to explore our desalination systems!"
         }
       />
       <ThirdSection
@@ -60,7 +60,7 @@ export default function Desalination() {
           "Turning Saltwater into Freshwater: The Future of Desalination Technology"
         }
         dec1={
-          "At Water Engineering.ae, we specialize in delivering custom solutions for both commercial and residential applications. As leading desalination system manufacturers, we offer everything from desalination machines for home use to industrial systems, providing clean water at affordable prices."
+          "At Innovators, we specialize in delivering custom solutions for both commercial and residential applications. As leading desalination system manufacturers, we offer everything from desalination machines for home use to industrial systems, providing clean water at affordable prices."
         }
         dec2={
           "We provide whole desalination plant installation services for both small and large-scale projects. Our skilled team works with top seawater desalination equipment suppliers to deliver high quality systems. Let us help you achieve efficient, maintainable water solutions."
@@ -96,14 +96,14 @@ export default function Desalination() {
       <MergeSection
         title={"Explore Our Desalination Process Through Video"}
         dec={
-          "Join us for a video tour of our desalination facilities at Water Engineering.ae and see how our advanced technology turns seawater into fresh water. Discover how our desalination systems work and learn about the benefits for your community today!"
+          "Join us for a video tour of our desalination facilities at Innovators and see how our advanced technology turns seawater into fresh water. Discover how our desalination systems work and learn about the benefits for your community today!"
         }
         videoUrl={
           "https://www.youtube.com/embed/XHOmBV4js_E?si=i0VNXc-88nbXjcdN"
         }
         Heading={"We consider the quality our quantity"}
         description={
-          "At Water Engineering.ae, we’re passionate about providing you with top-quality desalination solutions that truly meet your needs."
+          "At Innovators, we’re passionate about providing you with top-quality desalination solutions that truly meet your needs."
         }
         heading1={"Custom Desalination Systems"}
         des1={
