@@ -8,7 +8,7 @@ export default function Blog1() {
   return (
     <>
       <Header />
-      <SubHero title="Top 10 Benefits of Using Water Softeners for Your Home" desc="Learn how water softeners transform your home by eliminating hard minerals, improving appliance longevity, and enhancing water quality for daily use." img="/img1.png" />
+      <SubHero title="Top 10 Benefits of Using Water Softeners for Your Home" desc="Learn how water softeners transform your home by eliminating hard minerals, improving appliance longevity, and enhancing water quality for daily use." img="/INNOVATORS_WATER%20SOFTENING.png" />
       <section className="max-w-[1140px] mx-auto py-12 px-4">
         {/* Introduction Section */}
         <h2 className="text-2xl font-bold mb-4 text-[#01008c]">Top 10 Benefits of Using Water Softeners for Your Home</h2>

@@ -3,7 +3,7 @@ export default function LeadingSolutions() {
   return (
     <section className="py-16 max-w-[1140px] mx-auto bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 items-center justify-content-between gap-28">
+        <div className="grid lg:grid-cols-2 justify-content-between gap-28">
           <div>
             <p className="text-gray-600 font-semibold text-xl uppercase mb-4">
               ENGINEERING PURE EXCELLENCE
@@ -29,11 +29,11 @@ export default function LeadingSolutions() {
             </button>
           </div>
 
-          <div className="flex justify-end">
+          <div className="">
             <img
-              src={img}
+              src="/Gemini_Generated_Image_uc7qkcuc7qkcuc7q.png"
               alt="Water treatment system"
-              className="rounded-lg self-end"
+              className="rounded-2xl w-full h-full object-cover "
             />
           </div>
         </div>

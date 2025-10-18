@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 export default function AdvancedTechnologies() {
   const technologies = [
     { name: "Desalination", image: '/DEsalination-removebg-preview.png' },
-    { name: "Water Softening", image: img2 },
+    { name: "Water Softening", image: 'INNOVATORS_WATER SOFTENING.png'},
     {
       name: "Containerized RO Plant",
-      image: img1,
+      image: '/CONTAINARIZED_RO.jpeg',
     },
     { name: "Reverse Osmosis", image: img4 },
-    { name: "Deionization", image: img5 },
+    { name: "Deionization", image: 'INNOVATORS_DEIONIZATION.png' },
     { name: "Water Ionization", image: img6 },
   ];
 
@@ -46,13 +46,13 @@ export default function AdvancedTechnologies() {
               key={index}
               className="shadow-[0_0_15px_0_rgba(0,0,0,0.14)] w-[90%] bg-white md:w-full mx-auto overflow-hidden group rounded-2xl "
             >
-              <CardContent className="text-center w-full h-full flex flex-col itmes-center justify-between">
+              <CardContent className="text-center w-full h-full flex flex-col items-center justify-between">
                 <img
                   src={tech.image || "/placeholder.svg"}
                   alt={tech.name}
-                  className="w-full object-cover rounded-lg scale-[1] h-72"
+                  className="w-full object-cover scale-[1] h-72"
                 />
-                <h3 className="text-base font-bold text-[#01008c] py-6 transition-colors duration-300 group-hover:bg-[#01008c] group-hover:text-white rounded-b-2xl">
+                <h3 className="text-base w-full font-bold text-[#01008c] py-6 transition-colors duration-300 group-hover:bg-[#01008c] group-hover:text-white rounded-b-2xl">
                   {tech.name}
                 </h3>
               </CardContent>
