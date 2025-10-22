@@ -27,7 +27,7 @@ export default function IndustriesServed() {
         <section className="md:max-w-[1140px] bg-trnasparent p-2 mx-auto flex flex-col md:flex-row md:gap-10">
         <div className="w-full md:w-[52%]">
               <div className="w-full h-90  md:h-120 md:sticky top-30">
-                <img src={img} className="w-full h-full " alt="" />
+                <img src="/unnamed.jpg" className="w-full h-full " alt="" />
               </div>
         </div>
         <div className="md:w-[50%] ">
