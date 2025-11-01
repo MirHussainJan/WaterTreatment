@@ -92,7 +92,7 @@ const Parts = () => {
     },
     {
       name: "Water Chiller Dispenser",
-      img: "/INNOVATORS (20).png",
+      img: "/img5.png",
       category: "domestic",
       description: "Compact water dispenser with chilling function. Perfect for homes and small offices requiring cold drinking water.",
       features: ["Hot & Cold", "Energy Efficient", "Child Lock", "Sleek Design"],

@@ -1,20 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import img1 from "../../assets/CarouselImagas/img1.png";
-import img2 from "../../assets/CarouselImagas/img2.png";
-import img3 from "../../assets/CarouselImagas/img3.png";
-import img4 from "../../assets/CarouselImagas/Img4.png";
-import img5 from "../../assets/CarouselImagas/img5.png";
-import img6 from "../../assets/CarouselImagas/img6.png";
 
 const images = [
-  { src: img1, name: "Water Filter System" },
-  { src: img2, name: "RO Water Purifier" },
-  { src: img3, name: "UV Sterilizer" },
-  { src: img4, name: "Water Softener" },
-  { src: img5, name: "Water Chiller" },
-  { src: img6, name: "Industrial RO Plant" },
+  { src: '/INNOVATORS (29).png', name: "Water Filter System" },
+  { src: '/INNOVATORS (32).png', name: "RO Water Purifier" },
+  { src: '/INNOVATORS (26).png', name: "UV Sterilizer" },
+  { src: '/INNOVATORS_WATER SOFTENING.png', name: "Water Softener" },
+  { src: '/INNOVATORS (20).png', name: "Water Chiller" },
+  { src: '/Industrial-RO-Plant-1024x683.jpg', name: "Industrial RO Plant" },
 ];
 
 export default function Carousel() {
