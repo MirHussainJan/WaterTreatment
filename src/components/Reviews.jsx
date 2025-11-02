@@ -68,7 +68,7 @@ export default function ClientTestimonials() {
     if (current > testimonials.length - cardsPerView) {
       setCurrent(Math.max(0, testimonials.length - cardsPerView));
     }
-  }, [cardsPerView, testimonials.length]);
+  }, [cardsPerView, testimonials.length, current]);
 
   const canGoLeft = current > 0;
   const canGoRight = current < testimonials.length - cardsPerView;
@@ -79,7 +79,7 @@ export default function ClientTestimonials() {
       <section className="py-16 bg-gray-100">
         <div className="max-w-[1140px] mx-auto px-4">
           <div className="text-center mb-6">
-            <h2 className="text-3xl font-bold">EXCELLENT</h2>
+            <h2 className="text-4xl md:text-5xl font-bold titles text-[#01008c] mb-4">What our customer are saying about us</h2>
             <div className="flex justify-center items-center gap-0">
               {/* 4.5 stars: 4 filled, 1 half */}
               {[...Array(4)].map((_, i) => (
